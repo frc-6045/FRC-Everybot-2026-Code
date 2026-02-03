@@ -4,10 +4,6 @@
 
 package frc.robot;
 
-import com.revrobotics.spark.FeedbackSensor;
-import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
-import com.revrobotics.spark.config.SparkFlexConfig;
-
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide
  * numerical or boolean constants. This class should not be used for any other
@@ -54,7 +50,7 @@ public final class Constants {
     public static final double SPIN_UP_SECONDS = 0.75;
   }
 
-  public static final class ClimbConstatns {
+  public static final class ClimbConstants {
     // Motor controller IDs for Climb motor
     public static final int CLIMBER_MOTOR_ID = 7;
 
