@@ -8,15 +8,15 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.CANFuelSubsystem;
 import static frc.robot.Constants.FuelConstants.*;
-import edu.wpi.first.wpilibj.Timer;
+import edu.wpi.first.wpilib.Timer;
 
 /* You should consider using the more terse Command factories API instead https://docs.wpilib.org/en/stable/docs/software/commandbased/organizing-command-based.html#defining-commands */
-public class EjectTimed extends Command {
+public class IntakeTimed extends Command {
   /** Creates a new Intake. */
 
   CANFuelSubsystem fuelSubsystem;
 
-  public EjectTimed(CANFuelSubsystem fuelSystem, double timeout) {
+  public IntakeTimed(CANFuelSubsystem fuelSystem, double timeout) {
     addRequirements(fuelSystem);
     this.fuelSubsystem = fuelSystem;
     this.timeout = timeout;
@@ -26,16 +26,15 @@ public class EjectTimed extends Command {
   final private double timeout;
 
   // Called when the command is initially scheduled. Set the rollers to the
-  // appropriate values for ejecting
+  // appropriate values for intaking
   @Override
   public void initialize() {
     fuelSubsystem
-        .setIntakeLauncherRoller(
-             -1 * SmartDashboard.getNumber("Intaking intake roller value", INTAKE_EJECT_PERCENT));
-     fuelSubsystem.setFeederRoller(SmartDashboard.getNumber("Intaking intake roller value", INDEXER_LAUNCHING_PERCENT));
-     this.timer = new Timer();
-     this.timer.reset();
-     this.timer.start();
+        .setIntakeLauncherRoller(SmartDashboard.getNumber("Intaking intake roller value", INTAKE_INTAKING_PERCENT));
+    fuelSubsystem.setFeederRoller(SmartDashboard.getNumber("Intaking feeder roller value", INDEXER_INTAKING_PERCENT));
+    this.timer = new Timer();
+    this.timer.reset();
+    this.timer.start();
   }
 
   // Called every time the scheduler runs while the command is scheduled. This
