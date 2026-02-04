@@ -16,7 +16,7 @@ public class Eject extends Command {
 
   CANFuelSubsystem fuelSubsystem;
 
-  public Eject(CANFuelSubsystem fuelSystem, double timeout) {
+  public EjectTimed(CANFuelSubsystem fuelSystem, double timeout) {
     addRequirements(fuelSystem);
     this.fuelSubsystem = fuelSystem;
     this.timeout = timeout;
