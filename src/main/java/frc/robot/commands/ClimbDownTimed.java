@@ -26,7 +26,7 @@ public class ClimbDownTimed extends Command {
   @Override
   public void initialize() {
     climberSubsystem
-        .setClimber(CLIMBER_MOTOR_UP_PERCENT);
+        .setClimber(CLIMBER_MOTOR_DOWN_PERCENT);
     this.timer = new Timer();
     this.timer.reset();
     this.timer.start();
