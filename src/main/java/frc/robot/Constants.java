@@ -73,4 +73,8 @@ public final class Constants {
     public static final double DRIVE_SCALING = 0.7;
     public static final double ROTATION_SCALING = 0.8;
   } 
+
+  public static final class AutoConstants {
+    public static final double LAUNCH_SECONDS = 1.0; // Change after testing
+  }
 }
