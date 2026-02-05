@@ -2,6 +2,7 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.ClimberSubsystem;
+import frc.robot.Constants.ClimbConstants;
 
 import edu.wpi.first.wpilibj.Timer;
 
@@ -26,7 +27,7 @@ public class ClimbDownTimed extends Command {
   @Override
   public void initialize() {
     climberSubsystem
-        .setClimber(CLIMBER_MOTOR_DOWN_PERCENT);
+        .setClimber(ClimbConstants.CLIMBER_MOTOR_DOWN_PERCENT);
     this.timer = new Timer();
     this.timer.reset();
     this.timer.start();

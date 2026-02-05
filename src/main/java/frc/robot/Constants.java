@@ -69,7 +69,7 @@ public final class Constants {
     public static final int OPERATOR_CONTROLLER_PORT = 1;
 
     // This value is multiplied by the joystick value when rotating the robot to
-    // help avoid turning too fast and beign difficult to control
+    // help avoid turning too fast and being difficult to control
     public static final double DRIVE_SCALING = 0.7;
     public static final double ROTATION_SCALING = 0.8;
   } 

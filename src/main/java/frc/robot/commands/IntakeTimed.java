@@ -8,7 +8,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.CANFuelSubsystem;
 import static frc.robot.Constants.FuelConstants.*;
-import edu.wpi.first.wpilib.Timer;
+import edu.wpi.first.wpilibj.Timer;
 
 /* You should consider using the more terse Command factories API instead https://docs.wpilib.org/en/stable/docs/software/commandbased/organizing-command-based.html#defining-commands */
 public class IntakeTimed extends Command {
@@ -53,6 +53,6 @@ public class IntakeTimed extends Command {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return this.timer.isFinished(this.timeout);
+    return this.timer.hasElapsed(this.timeout);
   }
 }
