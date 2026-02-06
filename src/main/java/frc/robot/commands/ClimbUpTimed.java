@@ -8,7 +8,7 @@ import static frc.robot.Constants.ClimbConstants.CLIMBER_MOTOR_UP_PERCENT;
 
 /* You should consider using the more terse Command factories API instead https://docs.wpilib.org/en/stable/docs/software/commandbased/organizing-command-based.html#defining-commands */
 public class ClimbUpTimed extends Command {
-  /** Creates a new Climer. */
+  /** Creates a new Climber. */
 
   ClimberSubsystem climberSubsystem;
   private Timer timer;
