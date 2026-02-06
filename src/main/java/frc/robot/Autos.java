@@ -26,7 +26,9 @@ public class Autos {
 
         // Autos //
         autoChooser = new SendableChooser<Command>();
-        autoChooser.addOption("Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
+        autoChooser.addOption("[L] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbLeft"));
+        autoChooser.addOption("[M] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
+        autoChooser.addOption("[R] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbRight"));
         autoChooser.addOption("[L] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbLeft"));
         autoChooser.addOption("[M] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimb"));
         autoChooser.addOption("[R] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRight"));
