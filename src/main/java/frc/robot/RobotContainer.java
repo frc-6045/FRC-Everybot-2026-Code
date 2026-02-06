@@ -71,17 +71,17 @@ public class RobotContainer {
   private void configureBindings() {
 
     // While the left bumper on operator controller is held, intake Fuel
-    driverController.leftBumper().whileTrue(new Intake(fuelSubsystem));
+    operatorController.leftBumper().whileTrue(new Intake(fuelSubsystem));
     // While the right bumper on the operator controller is held, spin up for 1
     // second, then launch fuel. When the button is released, stop.
-    driverController.rightBumper().whileTrue(new LaunchSequence(fuelSubsystem));
+    operatorController.rightBumper().whileTrue(new LaunchSequence(fuelSubsystem));
     // While the A button is held on the operator controller, eject fuel back out
     // the intake
-    driverController.a().whileTrue(new Eject(fuelSubsystem));
+    operatorController.a().whileTrue(new Eject(fuelSubsystem));
    // While the down arrow on the directional pad is held it will unclimb the robot
-    driverController.povDown().whileTrue(new ClimbDown(climberSubsystem));
+    operatorController.povDown().whileTrue(new ClimbDown(climberSubsystem));
     // While the up arrow on the directional pad is held it will climb the robot
-    driverController.povUp().whileTrue(new ClimbUp(climberSubsystem));
+    operatorController.povUp().whileTrue(new ClimbUp(climberSubsystem));
 
     // Set the default command for the drive subsystem to the command provided by
     // factory with the values provided by the joystick axes on the driver
@@ -90,8 +90,10 @@ public class RobotContainer {
     // value)
     driveSubsystem.setDefaultCommand(new Drive(driveSubsystem, driverController));
 
+    //noinspection Convert2MethodRef
     fuelSubsystem.setDefaultCommand(fuelSubsystem.run(() -> fuelSubsystem.stop()));
 
+    //noinspection Convert2MethodRef
     climberSubsystem.setDefaultCommand(climberSubsystem.run(() -> climberSubsystem.stop()));
 
   }
