@@ -38,7 +38,9 @@ public class Autos {
         autoChooser.addOption("[M] [CL] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbCLeft"));
         autoChooser.addOption("[M] [CM] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimb"));
         autoChooser.addOption("[M] [CR] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbCRight"));
-        autoChooser.addOption("[R] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRight"));
+        autoChooser.addOption("[R] [CL] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRightCLeft"));
+        autoChooser.addOption("[R] [CM] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRight"));
+        autoChooser.addOption("[R] [CR] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRightCRight"));
         autoChooser.addOption("[L] Kamikaze", AutoBuilder.buildAuto("kamikazeLeft"));
         autoChooser.addOption("[M] Kamikaze", AutoBuilder.buildAuto("kamikaze (disperse balls in center)"));
         autoChooser.addOption("[R] Kamikaze", AutoBuilder.buildAuto("kamikazeRight"));
