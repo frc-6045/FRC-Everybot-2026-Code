@@ -76,5 +76,6 @@ public final class Constants {
 
   public static final class AutoConstants {
     public static final double LAUNCH_SECONDS = 1.0; // Change after testing
+    public static final double CLIMB_UP_SECONDS = 1.0; // Change after testing
   }
 }
