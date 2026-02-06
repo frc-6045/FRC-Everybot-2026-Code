@@ -57,13 +57,13 @@ public class Autos {
         if (hasPositionVariants) {
             if (hasClimbVariants) {
                 autoChooser.addOption("[L] [CL] " + friendlyName, AutoBuilder.buildAuto(name+"LeftCLeft"));
-                autoChooser.addOption("[M] [CL] " + friendlyName, AutoBuilder.buildAuto(name+"CLeft"));
-                autoChooser.addOption("[R] [CL] " + friendlyName, AutoBuilder.buildAuto(name+"RightCLeft"));
                 autoChooser.addOption("[L] [CM] " + friendlyName, AutoBuilder.buildAuto(name+"Left"));
-                autoChooser.addOption("[M] [CM] " + friendlyName, AutoBuilder.buildAuto(name));
-                autoChooser.addOption("[R] [CM] " + friendlyName, AutoBuilder.buildAuto(name+"Right"));
                 autoChooser.addOption("[L] [CR] " + friendlyName, AutoBuilder.buildAuto(name+"LeftCRight"));
+                autoChooser.addOption("[M] [CL] " + friendlyName, AutoBuilder.buildAuto(name+"CLeft"));
+                autoChooser.addOption("[M] [CM] " + friendlyName, AutoBuilder.buildAuto(name));
                 autoChooser.addOption("[M] [CR] " + friendlyName, AutoBuilder.buildAuto(name+"CRight"));
+                autoChooser.addOption("[R] [CL] " + friendlyName, AutoBuilder.buildAuto(name+"RightCLeft"));
+                autoChooser.addOption("[R] [CM] " + friendlyName, AutoBuilder.buildAuto(name+"Right"));
                 autoChooser.addOption("[R] [CR] " + friendlyName, AutoBuilder.buildAuto(name+"RightCRight"));
             } else {
                 autoChooser.addOption("[L] " + friendlyName, AutoBuilder.buildAuto(name+"Left"));
