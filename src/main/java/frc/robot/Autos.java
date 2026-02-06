@@ -1,4 +1,4 @@
-package frc.robot.commands;
+package frc.robot;
 
 import com.pathplanner.lib.auto.AutoBuilder;
 import com.pathplanner.lib.auto.NamedCommands;
@@ -6,7 +6,6 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.commands.AutoLaunchSequence;
-import frc.robot.commands.ClimbUpTimed;
 import frc.robot.subsystems.CANFuelSubsystem;
 
 public class Autos {
