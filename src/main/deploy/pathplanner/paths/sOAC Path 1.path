@@ -3,16 +3,16 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.231111111111112,
-        "y": 4.023547979797979
+        "x": 3.208207070707071,
+        "y": 4.035
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.425588473917017,
-        "y": 3.5874390670916556
+        "x": 2.4866158054003824,
+        "y": 3.62430995211503
       },
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Middle Starting Point"
     },
     {
       "anchor": {
@@ -20,8 +20,8 @@
         "y": 3.794507575757576
       },
       "prevControl": {
-        "x": 2.8140338747724507,
-        "y": 3.478459563335499
+        "x": 2.793343079818574,
+        "y": 3.424210250778746
       },
       "nextControl": null,
       "isLocked": false,
