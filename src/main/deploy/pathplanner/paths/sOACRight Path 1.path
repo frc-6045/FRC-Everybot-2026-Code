@@ -3,16 +3,16 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.208207070707071,
-        "y": 4.035
+        "x": 3.2555828604373964,
+        "y": 1.4086789360489218
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.4866158054003824,
-        "y": 3.62430995211503
+        "x": 3.490096588408294,
+        "y": 1.3220572794427823
       },
       "isLocked": false,
-      "linkedName": "Middle Starting Point"
+      "linkedName": "Right Starting Point"
     },
     {
       "anchor": {
@@ -20,8 +20,8 @@
         "y": 3.794507575757576
       },
       "prevControl": {
-        "x": 2.793343079818574,
-        "y": 3.424210250778746
+        "x": 1.6954750366702582,
+        "y": 3.5779474741438153
       },
       "nextControl": null,
       "isLocked": false,
@@ -45,7 +45,7 @@
     "rotation": 0.0
   },
   "reversed": false,
-  "folder": "shootOnceAndClimb",
+  "folder": "shootOnceAndClimbRight",
   "idealStartingState": {
     "velocity": 0,
     "rotation": 180.0

@@ -27,8 +27,12 @@ public class Autos {
         // Autos //
         autoChooser = new SendableChooser<Command>();
         autoChooser.addOption("Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
-        autoChooser.addOption("Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimb"));
-        autoChooser.addOption("Kamikaze (Disperse balls in center)", AutoBuilder.buildAuto("kamikaze (disperse balls in center)"));
+        autoChooser.addOption("[L] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbLeft"));
+        autoChooser.addOption("[M] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimb"));
+        autoChooser.addOption("[R] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRight"));
+        autoChooser.addOption("[L] Kamikaze", AutoBuilder.buildAuto("kamikazeLeft"));
+        autoChooser.addOption("[M] Kamikaze", AutoBuilder.buildAuto("kamikaze (disperse balls in center)"));
+        autoChooser.addOption("[R] Kamikaze", AutoBuilder.buildAuto("kamikazeRight"));
 
         SmartDashboard.putData("autos", autoChooser);
     }

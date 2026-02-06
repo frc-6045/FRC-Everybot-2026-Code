@@ -3,10 +3,12 @@
   "robotLength": 0.9,
   "holonomicMode": true,
   "pathFolders": [
-    "kamikazeRight",
+    "shootOnceAndClimbRight",
     "kamikaze",
     "kamikazeLeft",
+    "kamikazeRight",
     "shootOnceAndClimb",
+    "shootOnceAndClimbLeft",
     "shootTwiceAndClimb"
   ],
   "autoFolders": [],
