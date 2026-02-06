@@ -34,6 +34,8 @@ public class RobotContainer {
   private final CANFuelSubsystem fuelSubsystem = new CANFuelSubsystem();
   private final ClimberSubsystem climberSubsystem = new ClimberSubsystem();
 
+  private final Autos autos = new Autos(fuelSubsystem, climberSubsystem);
+
   // The driver's controller
   private final CommandXboxController driverController = new CommandXboxController(
       DRIVER_CONTROLLER_PORT);
@@ -43,6 +45,7 @@ public class RobotContainer {
       OPERATOR_CONTROLLER_PORT);
 
   // The autonomous chooser
+  @SuppressWarnings("FieldCanBeLocal")
   private final SendableChooser<Command> autoChooser = new SendableChooser<>();
 
   /**
@@ -105,6 +108,7 @@ public class RobotContainer {
    */
   public Command getAutonomousCommand() {
     // An example command will be run in autonomous
-    return autoChooser.getSelected();
+    //return autoChooser.getSelected();
+    return autos.getAutonomousCommand();
   }
 }
