@@ -13,9 +13,6 @@ import frc.robot.subsystems.ClimberSubsystem;
 import frc.robot.commands.EjectTimed;
 import frc.robot.commands.IntakeTimed;
 
-import java.util.List;
-import java.util.Map;
-
 @SuppressWarnings("unused")
 public class Autos {
     @SuppressWarnings("FieldMayBeFinal")
@@ -33,7 +30,7 @@ public class Autos {
         //noinspection MoveFieldAssignmentToInitializer,Convert2Diamond
         autoChooser = new SendableChooser<Command>();
         createAuto("shootTwiceAndClimb", "Shoot twice and climb", true, true, autoChooser);
-        createAuto("shootOnceAndClimb", "Shoot once and climb", true, false, autoChooser);
+        createAuto("shootOnceAndClimb", "Shoot once and climb", true, true, autoChooser);
         createAuto("kamikaze", "Kamikaze", true, false, autoChooser);
 
         //autoChooser.addOption("[L] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbLeft"));
@@ -55,6 +52,7 @@ public class Autos {
         SmartDashboard.putData("autos", autoChooser);
     }
 
+    @SuppressWarnings("SameParameterValue")
     private void createAuto(String name, String friendlyName, Boolean hasPositionVariants, Boolean hasClimbVariants, SendableChooser<Command> autoChooser) {
         if (hasPositionVariants) {
             if (hasClimbVariants) {

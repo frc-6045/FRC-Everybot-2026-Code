@@ -16,16 +16,16 @@
     },
     {
       "anchor": {
-        "x": 1.536212121212122,
-        "y": 3.7830555555555554
+        "x": 1.5705681818181825,
+        "y": 3.794507575757576
       },
       "prevControl": {
-        "x": 1.2884593784400944,
-        "y": 3.7496103997189096
+        "x": 1.3228154390461548,
+        "y": 3.7610624199209304
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Climb Front"
     }
   ],
   "rotationTargets": [],
