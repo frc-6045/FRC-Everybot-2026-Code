@@ -13,7 +13,9 @@ import frc.robot.subsystems.ClimberSubsystem;
 import frc.robot.commands.EjectTimed;
 import frc.robot.commands.IntakeTimed;
 
+@SuppressWarnings("unused")
 public class Autos {
+    @SuppressWarnings("FieldMayBeFinal")
     private SendableChooser<Command> autoChooser;
 
     public Autos(CANFuelSubsystem fuelSubsystem, ClimberSubsystem climberSubsystem) {
@@ -25,6 +27,7 @@ public class Autos {
         NamedCommands.registerCommand("IntakeTimed", new IntakeTimed(fuelSubsystem, Constants.AutoConstants.INTAKE_SECONDS));
 
         // Autos //
+        //noinspection MoveFieldAssignmentToInitializer,Convert2Diamond
         autoChooser = new SendableChooser<Command>();
         autoChooser.addOption("[L] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbLeft"));
         autoChooser.addOption("[M] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
