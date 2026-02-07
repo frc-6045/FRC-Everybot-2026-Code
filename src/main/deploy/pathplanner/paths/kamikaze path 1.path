@@ -8,8 +8,8 @@
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.2189006125633624,
-        "y": 2.778693111100942
+        "x": 2.606366580352856,
+        "y": 3.490950796872231
       },
       "isLocked": false,
       "linkedName": "Middle Starting Point"
@@ -20,8 +20,8 @@
         "y": 2.546237373737374
       },
       "prevControl": {
-        "x": 3.0546629525853235,
-        "y": 3.833921553402191
+        "x": 2.8258415256589102,
+        "y": 3.2728295414558883
       },
       "nextControl": null,
       "isLocked": false,
