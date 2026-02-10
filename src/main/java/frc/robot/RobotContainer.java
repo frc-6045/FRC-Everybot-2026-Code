@@ -4,6 +4,7 @@
 
 package frc.robot;
 
+import edu.wpi.first.math.MathUtil;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
@@ -20,6 +21,7 @@ import frc.robot.commands.LaunchSequence;
 import frc.robot.subsystems.CANDriveSubsystem;
 import frc.robot.subsystems.CANFuelSubsystem;
 import frc.robot.subsystems.ClimberSubsystem;
+import frc.robot.subsystems.Swerve;
 
 /**
  * This class is where the bulk of the robot should be declared. Since
@@ -33,6 +35,7 @@ public class RobotContainer {
   private final CANDriveSubsystem driveSubsystem = new CANDriveSubsystem();
   private final CANFuelSubsystem fuelSubsystem = new CANFuelSubsystem();
   private final ClimberSubsystem climberSubsystem = new ClimberSubsystem();
+  private final Swerve swerveSubsystem = new Swerve();
 
   private final Autos autos = new Autos(fuelSubsystem, climberSubsystem);
 
@@ -98,6 +101,16 @@ public class RobotContainer {
 
     //noinspection Convert2MethodRef
     climberSubsystem.setDefaultCommand(climberSubsystem.run(() -> climberSubsystem.stop()));
+
+
+    // Set default swerve drive command
+    swerveSubsystem.setDefaultCommand(
+        swerveSubsystem.driveCommand(
+            () -> -MathUtil.applyDeadband(driverController.getLeftY(), ControllerConstants.kDeadband),
+            () -> -MathUtil.applyDeadband(driverController.getLeftX(), ControllerConstants.kDeadband),
+            () -> -MathUtil.applyDeadband(driverController.getRightX(), ControllerConstants.kDeadband)
+        )
+    );
 
   }
 
