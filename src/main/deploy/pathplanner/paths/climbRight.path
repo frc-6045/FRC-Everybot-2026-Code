@@ -4,24 +4,24 @@
     {
       "anchor": {
         "x": 1.5705681818181825,
-        "y": 3.794507575757576
+        "y": 3.7601515151515157
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.1989717428482587,
-        "y": 1.5042450831778598
+        "x": 2.2347853535353543,
+        "y": 3.7601515151515157
       },
       "isLocked": false,
       "linkedName": "Climb Front"
     },
     {
       "anchor": {
-        "x": 0.525205450611526,
-        "y": 2.7632034812914594
+        "x": 1.5705681818181825,
+        "y": 3.2333585858585856
       },
       "prevControl": {
-        "x": 0.49941169802031526,
-        "y": 1.6475208592454396
+        "x": 2.1660732323232335,
+        "y": 3.2448106060606063
       },
       "nextControl": null,
       "isLocked": false,
@@ -42,7 +42,7 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -90.0
+    "rotation": 0.0
   },
   "reversed": false,
   "folder": "alternateClimb",

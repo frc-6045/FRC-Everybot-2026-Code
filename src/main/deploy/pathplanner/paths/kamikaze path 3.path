@@ -3,25 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 6.254444444444443,
-        "y": 2.546237373737374
+        "x": 7.113345959595958,
+        "y": 1.378131313131314
       },
       "prevControl": null,
       "nextControl": {
-        "x": 7.880631313131314,
-        "y": -1.187121212121212
+        "x": 8.705169451972948,
+        "y": -0.3396784963616317
       },
       "isLocked": false,
       "linkedName": "kamikaze parh 2 end"
     },
     {
       "anchor": {
-        "x": 7.605782828282829,
-        "y": 6.932361111111111
+        "x": 7.9722474747474745,
+        "y": 6.325404040404041
       },
       "prevControl": {
-        "x": 7.697398989898989,
-        "y": 5.77570707070707
+        "x": 7.8023231290221,
+        "y": 6.508777202916452
       },
       "nextControl": null,
       "isLocked": false,
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": 62.301
   },
   "reversed": false,
   "folder": "kamikaze",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": 62.301
   },
   "useDefaultConstraints": true
 }

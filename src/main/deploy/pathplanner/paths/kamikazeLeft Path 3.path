@@ -3,25 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 6.088665235022803,
-        "y": 5.65598164775083
+        "x": 7.250770202020201,
+        "y": 6.703320707070707
       },
       "prevControl": null,
       "nextControl": {
-        "x": 8.2121843905444,
-        "y": 8.338179383030296
+        "x": 7.983699494949496,
+        "y": 7.333181818181819
       },
       "isLocked": false,
       "linkedName": "kamikazeLeft Path 2 End"
     },
     {
       "anchor": {
-        "x": 7.598951142723882,
-        "y": 1.1301181592039802
+        "x": 7.834823232323233,
+        "y": 1.1490909090909098
       },
       "prevControl": {
-        "x": 7.612582465274912,
-        "y": 6.352442345561389
+        "x": 8.270000000000001,
+        "y": 2.6378535353535337
       },
       "nextControl": null,
       "isLocked": false,
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": -58.392
   },
   "reversed": false,
   "folder": "kamikazeLeft",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": -58.392
   },
   "useDefaultConstraints": true
 }

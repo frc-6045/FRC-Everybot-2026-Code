@@ -3,25 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.1004090549854895,
-        "y": 5.65598164775083
+        "x": 3.208207070707071,
+        "y": 5.122941919191919
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.7769394542347734,
-        "y": 5.681083061013365
+        "x": 3.998396464646465,
+        "y": 5.466502525252525
       },
       "isLocked": false,
       "linkedName": "kamikazeLeft Path 1 End"
     },
     {
       "anchor": {
-        "x": 6.088665235022803,
-        "y": 5.65598164775083
+        "x": 7.250770202020201,
+        "y": 6.703320707070707
       },
       "prevControl": {
-        "x": 4.9767645877557944,
-        "y": 5.657442319457561
+        "x": 4.960366161616162,
+        "y": 5.283270202020203
       },
       "nextControl": null,
       "isLocked": false,
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": -58.392
   },
   "reversed": false,
   "folder": "kamikazeLeft",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": -58.392
   },
   "useDefaultConstraints": true
 }
