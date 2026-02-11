@@ -7,7 +7,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "sOACRight Path 1"
+            "pathName": "sOACLeft Path 1"
           }
         },
         {
@@ -17,9 +17,15 @@
           }
         },
         {
+          "type": "path",
+          "data": {
+            "pathName": "climbRight"
+          }
+        },
+        {
           "type": "named",
           "data": {
-            "name": "ClimbUpL1Timed"
+            "name": "ClimbUpL2Timed"
           }
         }
       ]

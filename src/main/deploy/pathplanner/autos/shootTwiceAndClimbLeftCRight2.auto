@@ -7,7 +7,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "sTAC Path 1"
+            "pathName": "sTACLeft Path 1"
           }
         },
         {
@@ -49,13 +49,13 @@
         {
           "type": "path",
           "data": {
-            "pathName": "climbLeft"
+            "pathName": "climbRight"
           }
         },
         {
           "type": "named",
           "data": {
-            "name": "ClimbUpL1Timed"
+            "name": "ClimbUpL2Timed"
           }
         }
       ]
