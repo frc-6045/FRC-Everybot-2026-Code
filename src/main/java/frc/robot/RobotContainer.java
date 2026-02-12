@@ -11,6 +11,7 @@ import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
 import static frc.robot.Constants.OperatorConstants.*;
 
+import frc.robot.Constants.OperatorConstants;
 import frc.robot.commands.ClimbDown;
 import frc.robot.commands.ClimbUp;
 import frc.robot.commands.Drive;
@@ -106,9 +107,9 @@ public class RobotContainer {
     // Set default swerve drive command
     swerveSubsystem.setDefaultCommand(
         swerveSubsystem.driveCommand(
-            () -> -MathUtil.applyDeadband(driverController.getLeftY(), ControllerConstants.kDeadband),
-            () -> -MathUtil.applyDeadband(driverController.getLeftX(), ControllerConstants.kDeadband),
-            () -> -MathUtil.applyDeadband(driverController.getRightX(), ControllerConstants.kDeadband)
+            () -> -MathUtil.applyDeadband(driverController.getLeftY(), DRIVER_DEADZONE),
+            () -> -MathUtil.applyDeadband(driverController.getLeftX(), DRIVER_DEADZONE),
+            () -> -MathUtil.applyDeadband(driverController.getRightX(), DRIVER_DEADZONE)
         )
     );
 
