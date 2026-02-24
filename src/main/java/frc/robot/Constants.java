@@ -82,7 +82,8 @@ public final class Constants {
 
   public static final class AutoConstants {
     public static final double LAUNCH_SECONDS = 1.0; // Change after testing
-    public static final double CLIMB_UP_SECONDS = 1.0; // Change after testing
+    public static final double CLIMB_UP_L1_SECONDS = 1.0; // Change after testing
+    public static final double CLIMB_UP_L2_SECONDS = 1.0; // Change after testing
     public static final double CLIMB_DOWN_SECONDS = 1.0; // Change after testing
     public static final double EJECT_SECONDS = 1.0; // Change after testing
     public static final double INTAKE_SECONDS = 1.0; // Change after testing
@@ -93,6 +94,5 @@ public final class Constants {
     public static final Matter CHASSIS    = new Matter(new Translation3d(0, 0, Units.inchesToMeters(8)), ROBOT_MASS);
     public static final double LOOP_TIME  = 0.13; //s, 20ms + 110ms sprk max velocity lag
     public static final double MAX_SPEED = Units.feetToMeters(25);
-    public static final double kMaxSpeedMetersPerSecond = 4; // why is it four? yes.
   }
 }

@@ -17,9 +17,15 @@
           }
         },
         {
+          "type": "path",
+          "data": {
+            "pathName": "climbLeft"
+          }
+        },
+        {
           "type": "named",
           "data": {
-            "name": "ClimbUpL1Timed"
+            "name": "ClimbUpL2Timed"
           }
         }
       ]
