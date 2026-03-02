@@ -42,7 +42,7 @@ public class Swerve extends SubsystemBase {
 
         try {
             m_swerveDrive = new SwerveParser(new File(Filesystem.getDeployDirectory(), "swerve"))
-                    .createSwerveDrive(SwerveConstants.kMaxSpeedMetersPerSecond);
+                    .createSwerveDrive(SwerveConstants.MAX_SPEED);
         } catch (Exception e) {
             throw new RuntimeException("Failed to create swerve drive", e);
         }
