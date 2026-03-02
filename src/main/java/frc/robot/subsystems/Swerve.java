@@ -51,7 +51,8 @@ public class Swerve extends SubsystemBase {
         m_swerveDrive.setHeadingCorrection(false);
         m_swerveDrive.setCosineCompensator(false);
         m_swerveDrive.setAngularVelocityCompensation(true, true, 0.1);
-        m_swerveDrive.setModuleEncoderAutoSynchronize(true, 1); // TODO: orignially false, testign stuff rn
+        // Keep module encoders synchronized with absolute encoders to avoid drift.
+        m_swerveDrive.setModuleEncoderAutoSynchronize(true, 1);
 
         // Setup PathPlanner
         setupPathPlanner();
@@ -153,7 +154,7 @@ public class Swerve extends SubsystemBase {
      * @param fieldRelative Whether to drive field-relative
      */
     public void drive(Translation2d translation, double rotation, boolean fieldRelative) {
-        //m_swerveDrive.drive(translation, rotation, fieldRelative, false);
+        m_swerveDrive.drive(translation, rotation, fieldRelative, false);
     }
 
     /**
@@ -162,7 +163,7 @@ public class Swerve extends SubsystemBase {
      * @param velocity ChassisSpeeds object representing the desired field-relative velocities
      */
     public void driveFieldOriented(ChassisSpeeds velocity) {
-       // m_swerveDrive.driveFieldOriented(velocity);
+        m_swerveDrive.driveFieldOriented(velocity);
     }
 
     /**
@@ -171,7 +172,7 @@ public class Swerve extends SubsystemBase {
      * @param velocity ChassisSpeeds object representing the desired robot-relative velocities
      */
     public void drive(ChassisSpeeds velocity) {
-       // m_swerveDrive.drive(velocity);
+        m_swerveDrive.drive(velocity);
     }
 
     /**
@@ -259,12 +260,11 @@ public class Swerve extends SubsystemBase {
      * Red alliance faces 180 degrees, blue alliance faces 0 degrees.
      */
     public void zeroGyroWithAlliance() {
-        if (isRedAlliance()) {
-            zeroGyro();
-            resetOdometry(new Pose2d(getPose().getTranslation(), Rotation2d.fromDegrees(180)));
-        } else {
-            zeroGyro();
-        }
+        zeroGyro();
+        resetOdometry(
+            new Pose2d(
+                getPose().getTranslation(),
+                isRedAlliance() ? Rotation2d.fromDegrees(180) : Rotation2d.fromDegrees(0)));
     }
 
     /**
