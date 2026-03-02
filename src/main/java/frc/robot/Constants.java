@@ -71,8 +71,8 @@ public final class Constants {
     // values in the Joystick tab of the Driver Station software
     public static final int DRIVER_CONTROLLER_PORT = 0;
     public static final int OPERATOR_CONTROLLER_PORT = 1;
-    public static final double DRIVER_DEADZONE = 1; // change after testing
-    public static final double OPERATOR_DEADZONE = 1; //change after testing
+    public static final double DRIVER_DEADZONE = 0.1;
+    public static final double OPERATOR_DEADZONE = 0.1;
 
     // This value is multiplied by the joystick value when rotating the robot to
     // help avoid turning too fast and being difficult to control
