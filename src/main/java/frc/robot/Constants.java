@@ -87,6 +87,7 @@ public final class Constants {
     public static final double CLIMB_DOWN_SECONDS = 1.0; // Change after testing
     public static final double EJECT_SECONDS = 1.0; // Change after testing
     public static final double INTAKE_SECONDS = 1.0; // Change after testing
+    public static final double INTAKE_SECONDS_LONG = 30.0; // Change after testing
   }
 
   public static class SwerveConstants {

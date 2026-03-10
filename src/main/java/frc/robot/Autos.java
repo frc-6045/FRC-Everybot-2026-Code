@@ -26,6 +26,7 @@ public class Autos {
         NamedCommands.registerCommand("ClimbDownTimed", new ClimbDownTimed(climberSubsystem, Constants.AutoConstants.CLIMB_DOWN_SECONDS));
         NamedCommands.registerCommand("EjectTimed", new EjectTimed(fuelSubsystem, Constants.AutoConstants.EJECT_SECONDS));
         NamedCommands.registerCommand("IntakeTimed", new IntakeTimed(fuelSubsystem, Constants.AutoConstants.INTAKE_SECONDS));
+        NamedCommands.registerCommand("IntakeTimedLong", new IntakeTimed(fuelSubsystem, Constants.AutoConstants.INTAKE_SECONDS_LONG));
 
         // Autos //
         //noinspection MoveFieldAssignmentToInitializer,Convert2Diamond
