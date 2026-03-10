@@ -33,22 +33,25 @@ public class Autos {
         createAuto("shootTwiceAndClimb", "Shoot twice and climb", true, true, true, autoChooser);
         createAuto("shootOnceAndClimb", "Shoot once and climb", true, true, true, autoChooser);
         createAuto("kamikaze", "Kamikaze", true, false, false, autoChooser);
+        createAuto("doNothing", "Do nothing", false, false, false, autoChooser);
+        createAuto("moveOffLine", "Move off line", true, false, false, autoChooser);
+        createAuto("collectBalls", "Collect balls", true, false, false, autoChooser);
 
         //autoChooser.addOption("[L] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbLeft"));
-        //autoChooser.addOption("[M] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
-        //autoChooser.addOption("[R] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbRight"));
-        //autoChooser.addOption("[L] [CL] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbLeftCLeft"));
-        //autoChooser.addOption("[L] [CM] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbLeft"));
-        //autoChooser.addOption("[L] [CR] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbLeftCRight"));
-        //autoChooser.addOption("[M] [CL] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbCLeft"));
-        //autoChooser.addOption("[M] [CM] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimb"));
-        //autoChooser.addOption("[M] [CR] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbCRight"));
-        //autoChooser.addOption("[R] [CL] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRightCLeft"));
-        //autoChooser.addOption("[R] [CM] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRight"));
-        //autoChooser.addOption("[R] [CR] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRightCRight"));
-        //autoChooser.addOption("[L] Kamikaze", AutoBuilder.buildAuto("kamikazeLeft"));
-        //autoChooser.addOption("[M] Kamikaze", AutoBuilder.buildAuto("kamikaze (disperse balls in center)"));
-        //autoChooser.addOption("[R] Kamikaze", AutoBuilder.buildAuto("kamikazeRight"));
+        //        //autoChooser.addOption("[M] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
+        //        //autoChooser.addOption("[R] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbRight"));
+        //        //autoChooser.addOption("[L] [CL] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbLeftCLeft"));
+        //        //autoChooser.addOption("[L] [CM] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbLeft"));
+        //        //autoChooser.addOption("[L] [CR] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbLeftCRight"));
+        //        //autoChooser.addOption("[M] [CL] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbCLeft"));
+        //        //autoChooser.addOption("[M] [CM] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimb"));
+        //        //autoChooser.addOption("[M] [CR] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbCRight"));
+        //        //autoChooser.addOption("[R] [CL] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRightCLeft"));
+        //        //autoChooser.addOption("[R] [CM] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRight"));
+        //        //autoChooser.addOption("[R] [CR] Shoot once and climb", AutoBuilder.buildAuto("shootOnceAndClimbRightCRight"));
+        //        //autoChooser.addOption("[L] Kamikaze", AutoBuilder.buildAuto("kamikazeLeft"));
+        //        //autoChooser.addOption("[M] Kamikaze", AutoBuilder.buildAuto("kamikaze (disperse balls in center)"));
+        //        //autoChooser.addOption("[R] Kamikaze", AutoBuilder.buildAuto("kamikazeRight"));
 
         SmartDashboard.putData("autos", autoChooser);
     }
