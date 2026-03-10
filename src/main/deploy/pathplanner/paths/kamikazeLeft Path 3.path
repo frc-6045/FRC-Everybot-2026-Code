@@ -16,16 +16,16 @@
     },
     {
       "anchor": {
-        "x": 7.834823232323233,
-        "y": 1.1490909090909098
+        "x": 7.685946969696969,
+        "y": 2.385909090909091
       },
       "prevControl": {
-        "x": 8.270000000000001,
-        "y": 2.6378535353535337
+        "x": 8.121123737373738,
+        "y": 3.874671717171717
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "kamikazeRight path 3 end"
     }
   ],
   "rotationTargets": [],

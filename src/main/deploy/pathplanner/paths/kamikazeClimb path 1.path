@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 7.113345959595958,
-        "y": 1.378131313131314
-      },
-      "prevControl": null,
-      "nextControl": {
-        "x": 8.705169451972948,
-        "y": -0.3396784963616317
-      },
-      "isLocked": false,
-      "linkedName": "kamikaze parh 2 end"
-    },
-    {
-      "anchor": {
         "x": 7.3652904040404055,
         "y": 5.546666666666668
       },
+      "prevControl": null,
+      "nextControl": {
+        "x": 8.365290404040405,
+        "y": 5.546666666666668
+      },
+      "isLocked": false,
+      "linkedName": "kamikaze path 3 end"
+    },
+    {
+      "anchor": {
+        "x": 2.051553030303031,
+        "y": 4.264040404040404
+      },
       "prevControl": {
-        "x": 7.195366058315031,
-        "y": 5.730039829179079
+        "x": 2.200429292929294,
+        "y": 6.187979797979798
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "kamikaze path 3 end"
+      "linkedName": "kamikazeClimb path 1 end"
     }
   ],
   "rotationTargets": [],
@@ -45,7 +45,7 @@
     "rotation": 62.301
   },
   "reversed": false,
-  "folder": "kamikaze",
+  "folder": "kamikazeClimb",
   "idealStartingState": {
     "velocity": 0,
     "rotation": 62.301

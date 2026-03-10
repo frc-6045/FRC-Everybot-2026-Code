@@ -3,11 +3,13 @@
   "robotLength": 0.9,
   "holonomicMode": true,
   "pathFolders": [
-    "collectBalls",
     "alternateClimb",
+    "collectBalls",
     "kamikaze",
+    "kamikazeClimb",
     "kamikazeLeft",
     "kamikazeRight",
+    "kamikazeClimbRight",
     "moveOffLine",
     "shootOnceAndClimb",
     "shootOnceAndClimbLeft",
@@ -17,6 +19,7 @@
     "shootTwiceAndClimbRight"
   ],
   "autoFolders": [
+    "kamikazeClimb",
     "collectBalls",
     "kamikaze",
     "moveOffLine",
