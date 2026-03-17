@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.5288636363679533,
-        "y": 6.60025252525775
+        "x": 7.7317550505050505,
+        "y": 1.0918308080808083
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.8023636401821257,
-        "y": 6.6019009042897805
+        "x": 8.73175505050505,
+        "y": 1.0918308080808083
       },
       "isLocked": false,
-      "linkedName": "Left Starting Point"
+      "linkedName": "collectCenter path 2 end"
     },
     {
       "anchor": {
-        "x": 2.4752777777777784,
-        "y": 6.589
+        "x": 1.513308080808081,
+        "y": 2.5004292929292933
       },
       "prevControl": {
-        "x": 2.9014627212397035,
-        "y": 6.589483491688999
+        "x": 2.120265151515152,
+        "y": 4.115164141414142
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "collectCenter path 3 end"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 180.0
+    "rotation": 31.504266719204146
   },
   "reversed": false,
-  "folder": "moveOffLine",
+  "folder": "collectCenter",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 180.0
+    "rotation": -90.0
   },
   "useDefaultConstraints": true
 }

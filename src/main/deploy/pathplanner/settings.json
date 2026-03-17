@@ -7,9 +7,10 @@
     "collectBalls",
     "kamikaze",
     "kamikazeClimb",
+    "kamikazeClimbRight",
     "kamikazeLeft",
     "kamikazeRight",
-    "kamikazeClimbRight",
+    "collectCenter",
     "moveOffLine",
     "shootOnceAndClimb",
     "shootOnceAndClimbLeft",
@@ -19,9 +20,10 @@
     "shootTwiceAndClimbRight"
   ],
   "autoFolders": [
-    "kamikazeClimb",
     "collectBalls",
     "kamikaze",
+    "kamikazeClimb",
+    "collectCenter",
     "moveOffLine",
     "shootOnceAndClimb",
     "shootTwiceAndClimb"
