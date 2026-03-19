@@ -34,9 +34,9 @@ public final class Constants {
 
   public static final class FuelConstants {
     // Motor controller IDs for Fuel Mechanism motors
-    public static final int LEFT_INTAKE_LAUNCHER_MOTOR_ID = 5;
-    public static final int RIGHT_INTAKE_LAUNCHER_MOTOR_ID = 6;
-    public static final int INDEXER_MOTOR_ID = 8;
+    public static final int LEFT_INTAKE_LAUNCHER_MOTOR_ID = 9;
+    public static final int RIGHT_INTAKE_LAUNCHER_MOTOR_ID = 10;
+    public static final int INDEXER_MOTOR_ID = 11;
 
     // Current limit for fuel mechanism motors.
     public static final int INDEXER_MOTOR_CURRENT_LIMIT = 80;
@@ -56,7 +56,7 @@ public final class Constants {
 
   public static final class ClimbConstants {
     // Motor controller IDs for Climb motor
-    public static final int CLIMBER_MOTOR_ID = 7;
+    public static final int CLIMBER_MOTOR_ID = 10;
 
     // Current limit for climb motor
     public static final int CLIMBER_MOTOR_CURRENT_LIMIT = 40;
