@@ -38,7 +38,8 @@ public class RobotContainer {
   private final ClimberSubsystem climberSubsystem = new ClimberSubsystem();
   private final Swerve swerveSubsystem = new Swerve();
 
-  private final Autos autos = new Autos(fuelSubsystem, climberSubsystem);
+  // Autos must be initialized after Swerve since it depends on AutoBuilder being configured
+  private final Autos autos;
 
   // The driver's controller
   private final CommandXboxController driverController = new CommandXboxController(
@@ -56,6 +57,9 @@ public class RobotContainer {
    * The container for the robot. Contains subsystems, OI devices, and commands.
    */
   public RobotContainer() {
+    // Initialize Autos after Swerve has configured AutoBuilder
+    autos = new Autos(fuelSubsystem, climberSubsystem);
+
     configureBindings();
 
     // Set the options to show up in the Dashboard for selecting auto modes. If you
