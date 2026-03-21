@@ -41,7 +41,7 @@ public class Swerve extends SubsystemBase {
         SwerveDriveTelemetry.verbosity = TelemetryVerbosity.HIGH;
 
         try {
-            m_swerveDrive = new SwerveParser(new File(Filesystem.getDeployDirectory(), "swerve"))
+            m_swerveDrive = new SwerveParser(new File(Filesystem.getDeployDirectory(), "swerve/neo"))
                     .createSwerveDrive(SwerveConstants.MAX_SPEED);
         } catch (Exception e) {
             throw new RuntimeException("Failed to create swerve drive", e);
