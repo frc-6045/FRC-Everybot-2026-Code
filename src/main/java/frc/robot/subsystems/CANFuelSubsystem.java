@@ -28,9 +28,9 @@ public class CANFuelSubsystem extends SubsystemBase {
   /** Creates a new CANBallSubsystem. */
   public CANFuelSubsystem() {
     // create brushed motors for each of the motors on the launcher mechanism
-    LeftIntakeLauncher = new SparkMax(LEFT_INTAKE_LAUNCHER_MOTOR_ID, MotorType.kBrushless);
-    RightIntakeLauncher = new SparkMax(RIGHT_INTAKE_LAUNCHER_MOTOR_ID, MotorType.kBrushless);
-    Indexer = new SparkMax(INDEXER_MOTOR_ID, MotorType.kBrushed);
+    LeftIntakeLauncher = new SparkFlex(LEFT_INTAKE_LAUNCHER_MOTOR_ID, MotorType.kBrushless);
+    RightIntakeLauncher = new SparkFlex(RIGHT_INTAKE_LAUNCHER_MOTOR_ID, MotorType.kBrushless);
+    Indexer = new SparkFlex(INDEXER_MOTOR_ID, MotorType.kBrushless);
 
     // create the configuration for the feeder roller, set a current limit and apply
     // the config to the controller
