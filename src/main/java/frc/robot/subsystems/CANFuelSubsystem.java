@@ -8,10 +8,10 @@ import com.revrobotics.spark.SparkBase.ControlType;
 import com.revrobotics.spark.SparkBase.PersistMode;
 import com.revrobotics.spark.SparkBase.ResetMode;
 import com.revrobotics.spark.SparkLowLevel.MotorType;
-import com.revrobotics.spark.config.SparkMaxConfig;
+import com.revrobotics.spark.config.SparkFlexConfig;
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
 import com.revrobotics.spark.SparkClosedLoopController;
-import com.revrobotics.spark.SparkMax;
+import com.revrobotics.spark.SparkFlex;
 
 import edu.wpi.first.wpilibj.motorcontrol.Spark;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -21,33 +21,34 @@ import frc.robot.Constants;
 import static frc.robot.Constants.FuelConstants.*;
 
 public class CANFuelSubsystem extends SubsystemBase {
-  private final SparkMax LeftIntakeLauncher;
-  private final SparkMax RightIntakeLauncher;
-  private final SparkMax Indexer;
+  private final SparkFlex LeftIntakeLauncher;
+  private final SparkFlex RightIntakeLauncher;
+  private final SparkFlex Indexer;
 
   /** Creates a new CANBallSubsystem. */
   public CANFuelSubsystem() {
     // create brushed motors for each of the motors on the launcher mechanism
-    LeftIntakeLauncher = new SparkMax(LEFT_INTAKE_LAUNCHER_MOTOR_ID, MotorType.kBrushless);
-    RightIntakeLauncher = new SparkMax(RIGHT_INTAKE_LAUNCHER_MOTOR_ID, MotorType.kBrushless);
-    Indexer = new SparkMax(INDEXER_MOTOR_ID, MotorType.kBrushed);
+    LeftIntakeLauncher = new SparkFlex(LEFT_INTAKE_LAUNCHER_MOTOR_ID, MotorType.kBrushless);
+    RightIntakeLauncher = new SparkFlex(RIGHT_INTAKE_LAUNCHER_MOTOR_ID, MotorType.kBrushless);
+    Indexer = new SparkFlex(INDEXER_MOTOR_ID, MotorType.kBrushless);
 
     // create the configuration for the feeder roller, set a current limit and apply
     // the config to the controller
-    SparkMaxConfig feederConfig = new SparkMaxConfig();
+    SparkFlexConfig feederConfig = new SparkFlexConfig();
     feederConfig.smartCurrentLimit(INDEXER_MOTOR_CURRENT_LIMIT);
     Indexer.configure(feederConfig, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);
 
     // create the configuration for the launcher roller, set a current limit, set
     // the motor to inverted so that positive values are used for both intaking and
     // launching, and apply the config to the controller
-    SparkMaxConfig launcherConfig = new SparkMaxConfig();
+    SparkFlexConfig launcherConfig = new SparkFlexConfig();
 
     launcherConfig.smartCurrentLimit(LAUNCHER_MOTOR_CURRENT_LIMIT);
     launcherConfig.voltageCompensation(12);
     launcherConfig.idleMode(IdleMode.kCoast);
-    RightIntakeLauncher.configure(launcherConfig, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);
     launcherConfig.inverted(true);
+    RightIntakeLauncher.configure(launcherConfig, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);
+    launcherConfig.inverted(false);
     LeftIntakeLauncher.configure(launcherConfig, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);
 
     // put default values for various fuel operations onto the dashboard
