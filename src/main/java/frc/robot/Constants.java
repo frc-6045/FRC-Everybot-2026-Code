@@ -20,18 +20,6 @@ import swervelib.math.Matter;
  */
 public final class Constants {
 
-  public static final class DriveConstants {
-    // Motor controller IDs for drivetrain motors
-    public static final int LEFT_LEADER_ID = 1;
-    public static final int LEFT_FOLLOWER_ID = 3;
-    public static final int RIGHT_LEADER_ID = 2;
-    public static final int RIGHT_FOLLOWER_ID = 4;
-
-    // Current limit for drivetrain motors. 60A is a reasonable maximum to reduce
-    // likelihood of tripping breakers or damaging CIM motors
-    public static final int DRIVE_MOTOR_CURRENT_LIMIT = 60;
-  }
-
   public static final class FuelConstants {
     // Motor controller IDs for Fuel Mechanism motors
     public static final int LEFT_INTAKE_LAUNCHER_MOTOR_ID = 9;
@@ -73,11 +61,6 @@ public final class Constants {
     public static final int OPERATOR_CONTROLLER_PORT = 1;
     public static final double DRIVER_DEADZONE = 1; // change after testing
     public static final double OPERATOR_DEADZONE = 1; //change after testing
-
-    // This value is multiplied by the joystick value when rotating the robot to
-    // help avoid turning too fast and being difficult to control
-    public static final double DRIVE_SCALING = 0.7;
-    public static final double ROTATION_SCALING = 0.8;
   } 
 
   public static final class AutoConstants {
