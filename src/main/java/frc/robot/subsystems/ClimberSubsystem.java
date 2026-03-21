@@ -3,16 +3,16 @@ package frc.robot.subsystems;
 import com.revrobotics.spark.SparkBase.PersistMode;
 import com.revrobotics.spark.SparkBase.ResetMode;
 import com.revrobotics.spark.SparkLowLevel.MotorType;
-import com.revrobotics.spark.config.SparkMaxConfig;
+import com.revrobotics.spark.config.SparkFlexConfig;
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
-import com.revrobotics.spark.SparkMax;
+import com.revrobotics.spark.SparkFlex;
 
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 import static frc.robot.Constants.ClimbConstants.*;
 
 public class ClimberSubsystem extends SubsystemBase {
-  private final SparkMax climberMotor;
+  private final SparkFlex climberMotor;
 
   /** Creates a new CANBallSubsystem. */
   public ClimberSubsystem() {
@@ -21,7 +21,7 @@ public class ClimberSubsystem extends SubsystemBase {
 
     // create the configuration for the climb moter, set a current limit and apply
     // the config to the controller
-    SparkMaxConfig climbConfig = new SparkMaxConfig();
+    SparkFlexConfig climbConfig = new SparkFlexConfig();
     climbConfig.smartCurrentLimit(CLIMBER_MOTOR_CURRENT_LIMIT);
     climbConfig.idleMode(IdleMode.kBrake);
     climberMotor.configure(climbConfig, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);
