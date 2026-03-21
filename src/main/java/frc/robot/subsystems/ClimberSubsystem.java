@@ -17,7 +17,7 @@ public class ClimberSubsystem extends SubsystemBase {
   /** Creates a new CANBallSubsystem. */
   public ClimberSubsystem() {
     // create brushed motors for each of the motors on the launcher mechanism
-    climberMotor = new SparkMa(CLIMBER_MOTOR_ID, MotorType.kBrushless);
+    climberMotor = new SparkFlex(CLIMBER_MOTOR_ID, MotorType.kBrushless);
 
     // create the configuration for the climb moter, set a current limit and apply
     // the config to the controller
