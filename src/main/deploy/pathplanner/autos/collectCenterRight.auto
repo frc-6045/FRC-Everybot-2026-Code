@@ -7,7 +7,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "collectCenter path 1"
+            "pathName": "collectCenterRight path 1"
           }
         },
         {
@@ -23,7 +23,7 @@
               {
                 "type": "path",
                 "data": {
-                  "pathName": "collectCenterLeft path 2"
+                  "pathName": "collectCenterRight path 2"
                 }
               }
             ]
@@ -32,7 +32,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "collectCenterLeft path 3"
+            "pathName": "collectCenterRight path 3"
           }
         },
         {

@@ -37,7 +37,8 @@ public class Autos {
         createAuto("doNothing", "Do nothing", false, false, false, autoChooser);
         createAuto("moveOffLine", "Move off line", true, false, false, autoChooser);
         createAuto("collectBalls", "Collect balls", true, false, false, autoChooser);
-
+        createAuto("collectCenter", "Collect balls in center", true, false, false, autoChooser);
+        createAuto("garbagecanDestroyer", "haaaaaaaaaaa", false, false, false, autoChooser);
         //autoChooser.addOption("[L] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbLeft"));
         //        //autoChooser.addOption("[M] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
         //        //autoChooser.addOption("[R] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbRight"));
