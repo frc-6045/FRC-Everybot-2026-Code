@@ -7,6 +7,7 @@ package frc.robot;
 import edu.wpi.first.math.MathUtil;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj2.command.Command;
+import edu.wpi.first.wpilibj2.command.Commands;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
 import static frc.robot.Constants.OperatorConstants.*;
@@ -76,6 +77,8 @@ public class RobotContainer {
    * joysticks}.
    */
   private void configureBindings() {
+
+        operatorController.start().onTrue(Commands.runOnce(() -> swerveSubsystem.zeroGyroWithAlliance()));
 
     // While the left bumper on operator controller is held, intake Fuel
     operatorController.leftBumper().whileTrue(new Intake(fuelSubsystem));
