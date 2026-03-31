@@ -78,7 +78,8 @@ public class RobotContainer {
    */
   private void configureBindings() {
 
-        operatorController.start().onTrue(Commands.runOnce(() -> swerveSubsystem.zeroGyroWithAlliance()));
+    operatorController.start().onTrue(Commands.runOnce(() -> swerveSubsystem.zeroGyroWithAlliance()));
+    driverController.start().onTrue(Commands.runOnce(() -> swerveSubsystem.zeroGyroWithAlliance()));
 
     // While the left bumper on operator controller is held, intake Fuel
     operatorController.leftBumper().whileTrue(new Intake(fuelSubsystem));
