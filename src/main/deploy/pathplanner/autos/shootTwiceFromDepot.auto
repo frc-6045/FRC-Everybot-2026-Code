@@ -1,0 +1,62 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "sOFD path 1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "AutoLaunchSequence"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "sOFD path 2"
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "sOFD path 3"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeTimedLong"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "sOFD path 4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "AutoLaunchSequence"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "shootOnceFromDepot",
+  "choreoAuto": false
+}

@@ -31,14 +31,16 @@ public class Autos {
         // Autos //
         //noinspection MoveFieldAssignmentToInitializer,Convert2Diamond
         autoChooser = new SendableChooser<Command>();
-        createAuto("shootTwiceAndClimb", "Shoot twice and climb", true, true, true, autoChooser);
-        createAuto("shootOnceAndClimb", "Shoot once and climb", true, true, true, autoChooser);
+        //createAuto("shootTwiceAndClimb", "Shoot twice and climb", true, true, true, autoChooser);
+        //createAuto("shootOnceAndClimb", "Shoot once and climb", true, true, true, autoChooser);
         createAuto("kamikaze", "Kamikaze", true, false, false, autoChooser);
         createAuto("doNothing", "Do nothing", false, false, false, autoChooser);
         createAuto("moveOffLine", "Move off line", true, false, false, autoChooser);
         createAuto("collectBalls", "Collect balls", true, false, false, autoChooser);
         createAuto("collectCenter", "Collect balls in center", true, false, false, autoChooser);
         createAuto("garbagecanDestroyer", "haaaaaaaaaaa", false, false, false, autoChooser);
+        createAuto("testShooting", "Test Shooting", false, false, false, autoChooser);
+        createAuto("testIntake", "Test Intake", false, false, false, autoChooser);
         //autoChooser.addOption("[L] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbLeft"));
         //        //autoChooser.addOption("[M] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
         //        //autoChooser.addOption("[R] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbRight"));

@@ -81,19 +81,35 @@ public class RobotContainer {
     operatorController.start().onTrue(Commands.runOnce(() -> swerveSubsystem.zeroGyroWithAlliance()));
     driverController.start().onTrue(Commands.runOnce(() -> swerveSubsystem.zeroGyroWithAlliance()));
 
-    // While the left bumper on operator controller is held, intake Fuel
-    operatorController.leftBumper().whileTrue(new Intake(fuelSubsystem));
-    // While the right bumper on the operator controller is held, spin up for 1
-    // second, then launch fuel. When the button is released, stop.
-    operatorController.rightBumper().whileTrue(new LaunchSequence(fuelSubsystem, operatorController.getRightTriggerAxis()));
-    // While the A button is held on the operator controller, eject fuel back out
-    // the intake
-    operatorController.a().whileTrue(new Eject(fuelSubsystem));
-   // While the down arrow on the directional pad is held it will unclimb the robot
-    operatorController.povDown().whileTrue(new ClimbDown(climberSubsystem));
-    // While the up arrow on the directional pad is held it will climb the robot
-    operatorController.povUp().whileTrue(new ClimbUp(climberSubsystem));
+    boolean useBothControllers = false;
 
+    if (useBothControllers) {
+      // While the left bumper on operator controller is held, intake Fuel
+      operatorController.leftBumper().whileTrue(new Intake(fuelSubsystem));
+      // While the right bumper on the operator controller is held, spin up for 1
+      // second, then launch fuel. When the button is released, stop.
+      operatorController.rightBumper().whileTrue(new LaunchSequence(fuelSubsystem, operatorController.getRightTriggerAxis()));
+      // While the A button is held on the operator controller, eject fuel back out
+      // the intake
+      operatorController.a().whileTrue(new Eject(fuelSubsystem));
+      // While the down arrow on the directional pad is held it will unclimb the robot
+      operatorController.povDown().whileTrue(new ClimbDown(climberSubsystem));
+      // While the up arrow on the directional pad is held it will climb the robot
+      operatorController.povUp().whileTrue(new ClimbUp(climberSubsystem));
+    } else {
+      // While the left bumper on operator controller is held, intake Fuel
+      driverController.leftBumper().whileTrue(new Intake(fuelSubsystem));
+      // While the right bumper on the operator controller is held, spin up for 1
+      // second, then launch fuel. When the button is released, stop.
+      driverController.rightBumper().whileTrue(new LaunchSequence(fuelSubsystem, operatorController.getRightTriggerAxis()));
+      // While the A button is held on the operator controller, eject fuel back out
+      // the intake
+      driverController.a().whileTrue(new Eject(fuelSubsystem));
+      // While the down arrow on the directional pad is held it will unclimb the robot
+      driverController.povDown().whileTrue(new ClimbDown(climberSubsystem));
+      // While the up arrow on the directional pad is held it will climb the robot
+      driverController.povUp().whileTrue(new ClimbUp(climberSubsystem));
+    }
     //noinspection Convert2MethodRef
     fuelSubsystem.setDefaultCommand(fuelSubsystem.run(() -> fuelSubsystem.stop()));
 
@@ -106,7 +122,7 @@ public class RobotContainer {
         swerveSubsystem.driveCommand(
             () -> -MathUtil.applyDeadband(driverController.getLeftY(), DRIVER_DEADZONE),
             () -> -MathUtil.applyDeadband(driverController.getLeftX(), DRIVER_DEADZONE),
-            () -> -MathUtil.applyDeadband(driverController.getRightX(), DRIVER_DEADZONE)
+            () -> -MathUtil.applyDeadband(-driverController.getRightX(), DRIVER_DEADZONE)
         )
     );
 
