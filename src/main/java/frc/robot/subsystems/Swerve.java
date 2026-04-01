@@ -259,12 +259,7 @@ public class Swerve extends SubsystemBase {
      * Red alliance faces 180 degrees, blue alliance faces 0 degrees.
      */
     public void zeroGyroWithAlliance() {
-        if (isRedAlliance()) {
-            zeroGyro();
-            resetOdometry(new Pose2d(getPose().getTranslation(), Rotation2d.fromDegrees(180)));
-        } else {
-            zeroGyro();
-        }
+        zeroGyro();
     }
 
     /**
