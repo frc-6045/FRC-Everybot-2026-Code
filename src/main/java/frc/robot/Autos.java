@@ -41,6 +41,7 @@ public class Autos {
         createAuto("garbagecanDestroyer", "haaaaaaaaaaa", false, false, false, autoChooser);
         createAuto("testShooting", "Test Shooting", false, false, false, autoChooser);
         createAuto("testIntake", "Test Intake", false, false, false, autoChooser);
+        createAuto("shootTwiceFromDepot", "Shoot Twice From Depot", false, false, false, autoChooser);
         //autoChooser.addOption("[L] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbLeft"));
         //        //autoChooser.addOption("[M] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
         //        //autoChooser.addOption("[R] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbRight"));
