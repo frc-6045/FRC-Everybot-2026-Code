@@ -1,0 +1,547 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "youSpinMeRightRoundBabyRightRound path 1"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+          }
+        },
+        {
+                  "type": "path",
+                  "data": {
+                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                  }
+                },
+                {
+                  "type": "path",
+                  "data": {
+                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                  }
+                },
+                {
+                  "type": "path",
+                  "data": {
+                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                  }
+                },
+                {
+                  "type": "path",
+                  "data": {
+                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                  }
+                },
+                {
+                          "type": "path",
+                          "data": {
+                            "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                          }
+                        },
+                        {
+                          "type": "path",
+                          "data": {
+                            "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                          }
+                        },
+                        {
+                          "type": "path",
+                          "data": {
+                            "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                          }
+                        },
+                        {
+                          "type": "path",
+                          "data": {
+                            "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                          }
+                        },
+                        {
+                                  "type": "path",
+                                  "data": {
+                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                  }
+                                },
+                                {
+                                  "type": "path",
+                                  "data": {
+                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                  }
+                                },
+                                {
+                                  "type": "path",
+                                  "data": {
+                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                  }
+                                },
+                                {
+                                  "type": "path",
+                                  "data": {
+                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                  }
+                                },
+                                {
+                                          "type": "path",
+                                          "data": {
+                                            "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                          }
+                                        },
+                                        {
+                                          "type": "path",
+                                          "data": {
+                                            "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                          }
+                                        },
+                                        {
+                                          "type": "path",
+                                          "data": {
+                                            "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                          }
+                                        },
+                                        {
+                                          "type": "path",
+                                          "data": {
+                                            "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                          }
+                                        },
+                                        {
+                                                  "type": "path",
+                                                  "data": {
+                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                  }
+                                                },
+                                                {
+                                                  "type": "path",
+                                                  "data": {
+                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                  }
+                                                },
+                                                {
+                                                  "type": "path",
+                                                  "data": {
+                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                  }
+                                                },
+                                                {
+                                                  "type": "path",
+                                                  "data": {
+                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                  }
+                                                },
+                                                {
+                                                          "type": "path",
+                                                          "data": {
+                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                          }
+                                                        },
+                                                        {
+                                                          "type": "path",
+                                                          "data": {
+                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                          }
+                                                        },
+                                                        {
+                                                          "type": "path",
+                                                          "data": {
+                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                          }
+                                                        },
+                                                        {
+                                                          "type": "path",
+                                                          "data": {
+                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                          }
+                                                        },
+                                                        {
+                                                                  "type": "path",
+                                                                  "data": {
+                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "type": "path",
+                                                                  "data": {
+                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "type": "path",
+                                                                  "data": {
+                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "type": "path",
+                                                                  "data": {
+                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                  }
+                                                                },
+                                                                {
+                                                                                  "type": "path",
+                                                                                  "data": {
+                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                  }
+                                                                                },
+                                                                                {
+                                                                                  "type": "path",
+                                                                                  "data": {
+                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                  }
+                                                                                },
+                                                                                {
+                                                                                  "type": "path",
+                                                                                  "data": {
+                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                  }
+                                                                                },
+                                                                                {
+                                                                                  "type": "path",
+                                                                                  "data": {
+                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                  }
+                                                                                },
+                                                                                {
+                                                                                          "type": "path",
+                                                                                          "data": {
+                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                          }
+                                                                                        },
+                                                                                        {
+                                                                                          "type": "path",
+                                                                                          "data": {
+                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                          }
+                                                                                        },
+                                                                                        {
+                                                                                          "type": "path",
+                                                                                          "data": {
+                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                          }
+                                                                                        },
+                                                                                        {
+                                                                                          "type": "path",
+                                                                                          "data": {
+                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                          }
+                                                                                        },
+                                                                                        {
+                                                                                                  "type": "path",
+                                                                                                  "data": {
+                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                  }
+                                                                                                },
+                                                                                                {
+                                                                                                  "type": "path",
+                                                                                                  "data": {
+                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                  }
+                                                                                                },
+                                                                                                {
+                                                                                                  "type": "path",
+                                                                                                  "data": {
+                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                  }
+                                                                                                },
+                                                                                                {
+                                                                                                  "type": "path",
+                                                                                                  "data": {
+                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                  }
+                                                                                                },
+                                                                                                {
+                                                                                                          "type": "path",
+                                                                                                          "data": {
+                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                          }
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "type": "path",
+                                                                                                          "data": {
+                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                          }
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "type": "path",
+                                                                                                          "data": {
+                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                          }
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "type": "path",
+                                                                                                          "data": {
+                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                          }
+                                                                                                        },
+                                                                                                        {
+                                                                                                                  "type": "path",
+                                                                                                                  "data": {
+                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                                  }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                  "type": "path",
+                                                                                                                  "data": {
+                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                                  }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                  "type": "path",
+                                                                                                                  "data": {
+                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                                  }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                  "type": "path",
+                                                                                                                  "data": {
+                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                                  }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                          "type": "path",
+                                                                                                                          "data": {
+                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                                          }
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                          "type": "path",
+                                                                                                                          "data": {
+                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                                          }
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                          "type": "path",
+                                                                                                                          "data": {
+                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                                          }
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                          "type": "path",
+                                                                                                                          "data": {
+                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                                          }
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                                  "type": "path",
+                                                                                                                                  "data": {
+                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                                                  }
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                  "type": "path",
+                                                                                                                                  "data": {
+                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                                                  }
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                  "type": "path",
+                                                                                                                                  "data": {
+                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                                                  }
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                  "type": "path",
+                                                                                                                                  "data": {
+                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                                                  }
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                                  "type": "path",
+                                                                                                                                                  "data": {
+                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                                                                  }
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                  "type": "path",
+                                                                                                                                                  "data": {
+                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                                                                  }
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                  "type": "path",
+                                                                                                                                                  "data": {
+                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                                                                  }
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                  "type": "path",
+                                                                                                                                                  "data": {
+                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                                                                  }
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                          "type": "path",
+                                                                                                                                                          "data": {
+                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                                                                          }
+                                                                                                                                                        },
+                                                                                                                                                        {
+                                                                                                                                                          "type": "path",
+                                                                                                                                                          "data": {
+                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                                                                          }
+                                                                                                                                                        },
+                                                                                                                                                        {
+                                                                                                                                                          "type": "path",
+                                                                                                                                                          "data": {
+                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                                                                          }
+                                                                                                                                                        },
+                                                                                                                                                        {
+                                                                                                                                                          "type": "path",
+                                                                                                                                                          "data": {
+                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                                                                          }
+                                                                                                                                                        },
+                                                                                                                                                        {
+                                                                                                                                                                  "type": "path",
+                                                                                                                                                                  "data": {
+                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                                                                                  }
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                  "type": "path",
+                                                                                                                                                                  "data": {
+                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                                                                                  }
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                  "type": "path",
+                                                                                                                                                                  "data": {
+                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                                                                                  }
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                  "type": "path",
+                                                                                                                                                                  "data": {
+                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                                                                                  }
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                          "type": "path",
+                                                                                                                                                                          "data": {
+                                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                                                                                          }
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                          "type": "path",
+                                                                                                                                                                          "data": {
+                                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                                                                                          }
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                          "type": "path",
+                                                                                                                                                                          "data": {
+                                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                                                                                          }
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                          "type": "path",
+                                                                                                                                                                          "data": {
+                                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                                                                                          }
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                                  "type": "path",
+                                                                                                                                                                                  "data": {
+                                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                                                                                                  }
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                  "type": "path",
+                                                                                                                                                                                  "data": {
+                                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                                                                                                  }
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                  "type": "path",
+                                                                                                                                                                                  "data": {
+                                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                                                                                                  }
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                  "type": "path",
+                                                                                                                                                                                  "data": {
+                                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                                                                                                  }
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                          "type": "path",
+                                                                                                                                                                                          "data": {
+                                                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                                                                                                          }
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                          "type": "path",
+                                                                                                                                                                                          "data": {
+                                                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                                                                                                          }
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                          "type": "path",
+                                                                                                                                                                                          "data": {
+                                                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                                                                                                          }
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                          "type": "path",
+                                                                                                                                                                                          "data": {
+                                                                                                                                                                                            "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                                                                                                          }
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                                  "type": "path",
+                                                                                                                                                                                                  "data": {
+                                                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 2"
+                                                                                                                                                                                                  }
+                                                                                                                                                                                                },
+                                                                                                                                                                                                {
+                                                                                                                                                                                                  "type": "path",
+                                                                                                                                                                                                  "data": {
+                                                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 3"
+                                                                                                                                                                                                  }
+                                                                                                                                                                                                },
+                                                                                                                                                                                                {
+                                                                                                                                                                                                  "type": "path",
+                                                                                                                                                                                                  "data": {
+                                                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 4"
+                                                                                                                                                                                                  }
+                                                                                                                                                                                                },
+                                                                                                                                                                                                {
+                                                                                                                                                                                                  "type": "path",
+                                                                                                                                                                                                  "data": {
+                                                                                                                                                                                                    "pathName": "youSpinMeRightRoundBabyRightRound path 5"
+                                                                                                                                                                                                  }
+                                                                                                                                                                                                }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "youSpinMeRightRoundBabyRightRound",
+  "choreoAuto": false
+}

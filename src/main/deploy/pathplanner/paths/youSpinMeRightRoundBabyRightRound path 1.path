@@ -1,0 +1,54 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.586123737373737,
+        "y": 4.00064393939394
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.5948289727000553,
+        "y": 3.9712175505789578
+      },
+      "isLocked": false,
+      "linkedName": "Middle Starting Point"
+    },
+    {
+      "anchor": {
+        "x": 2.3007683741648113,
+        "y": 4.00064393939394
+      },
+      "prevControl": {
+        "x": 3.1688551482928506,
+        "y": 4.030800790834448
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "ySMRRBRR path 1 end"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 180.0
+  },
+  "reversed": false,
+  "folder": "youSpinMeRightRoundBabyRightRound",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 180.0
+  },
+  "useDefaultConstraints": true
+}
