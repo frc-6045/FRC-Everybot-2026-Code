@@ -107,18 +107,12 @@ public class Swerve extends SubsystemBase {
      */
     public Command driveCommand(DoubleSupplier translationX, DoubleSupplier translationY, DoubleSupplier angularRotationX) {
         return run(() -> {
-            // Get field-relative input
-            Translation2d fieldInput = new Translation2d(
-                translationX.getAsDouble() * m_swerveDrive.getMaximumChassisVelocity(),
-                translationY.getAsDouble() * m_swerveDrive.getMaximumChassisVelocity());
-
-            // Rotate to robot-relative using raw gyro yaw
-            Translation2d robotInput = fieldInput.rotateBy(m_swerveDrive.getYaw().unaryMinus());
-
             m_swerveDrive.drive(
-                SwerveMath.scaleTranslation(robotInput, 0.8),
+                SwerveMath.scaleTranslation(new Translation2d(
+                    translationX.getAsDouble() * m_swerveDrive.getMaximumChassisVelocity(),
+                    translationY.getAsDouble() * m_swerveDrive.getMaximumChassisVelocity()), 0.8),
                 Math.pow(angularRotationX.getAsDouble(), 3) * m_swerveDrive.getMaximumChassisAngularVelocity(),
-                false,
+                true,
                 false
             );
         });
