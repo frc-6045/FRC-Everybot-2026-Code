@@ -19,7 +19,7 @@ import swervelib.math.Matter;
  * wherever the constants are needed, to reduce verbosity. 
  */
 public final class Constants {
-
+  public static final int NICKELS_I_HAVE = 2;
   public static final class FuelConstants {
     // Motor controller IDs for Fuel Mechanism motors
     public static final int LEFT_INTAKE_LAUNCHER_MOTOR_ID = 9;
