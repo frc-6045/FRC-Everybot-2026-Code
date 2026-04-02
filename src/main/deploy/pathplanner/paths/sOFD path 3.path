@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 0.5513383838383843,
-        "y": 0.6452020202020197
+        "x": 0.46252783964365274,
+        "y": 7.236770601336303
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.3685353535353517,
-        "y": 0.6337500000000011
+        "x": 0.4747698076959686,
+        "y": 6.113091036494235
       },
       "isLocked": false,
-      "linkedName": "sTAC Path 2 End"
+      "linkedName": "sOFD path 2 end"
     },
     {
       "anchor": {
-        "x": 2.074457070707071,
-        "y": 3.920479797979798
+        "x": 0.46252783964365274,
+        "y": 4.94402004454343
       },
       "prevControl": {
-        "x": 3.059330808080809,
-        "y": 2.237032828282828
+        "x": 0.4374987275724326,
+        "y": 6.324382446023387
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "sTAC Path 3 End"
+      "linkedName": "sOFD path 3 end"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 2.5675973291877945
+    "rotation": -90.0
   },
   "reversed": false,
-  "folder": "shootTwiceAndClimb",
+  "folder": "shootTwiceFromDepot",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": -90.0
   },
   "useDefaultConstraints": true
 }
