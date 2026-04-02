@@ -4,7 +4,7 @@
       "type": "pigeon2",
       "id": 20,
       "canbus": "",
-      "offset": 180.0
+      "offset": 0
     },
     "invertedIMU": true,
     "modules": [
