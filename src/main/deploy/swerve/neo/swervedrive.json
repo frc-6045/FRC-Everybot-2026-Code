@@ -3,7 +3,8 @@
     "imu": {
       "type": "pigeon2",
       "id": 20,
-      "canbus": ""
+      "canbus": "",
+      "offset": 180.0
     },
     "invertedIMU": false,
     "modules": [
