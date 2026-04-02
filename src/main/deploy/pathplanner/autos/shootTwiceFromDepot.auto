@@ -11,9 +11,22 @@
           }
         },
         {
-          "type": "named",
+          "type": "race",
           "data": {
-            "name": "AutoLaunchSequence"
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "AutoLaunchSequence"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 5.0
+                }
+              }
+            ]
           }
         },
         {
