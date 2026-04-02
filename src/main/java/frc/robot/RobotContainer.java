@@ -81,7 +81,7 @@ public class RobotContainer {
     operatorController.start().onTrue(Commands.runOnce(() -> swerveSubsystem.zeroGyroWithAlliance()));
     driverController.start().onTrue(Commands.runOnce(() -> swerveSubsystem.zeroGyroWithAlliance()));
 
-    boolean useBothControllers = false;
+    boolean useBothControllers = true;
 
     if (useBothControllers) {
       // While the left bumper on operator controller is held, intake Fuel
