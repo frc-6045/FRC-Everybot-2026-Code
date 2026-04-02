@@ -6,7 +6,7 @@
       "canbus": "",
       "offset": 0
     },
-    "invertedIMU": true,
+    "invertedIMU": false,
     "modules": [
       "frontleft.json",
       "frontright.json",
