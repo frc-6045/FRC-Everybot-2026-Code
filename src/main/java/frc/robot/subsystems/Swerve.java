@@ -56,6 +56,9 @@ public class Swerve extends SubsystemBase {
 
         // Setup PathPlanner
         setupPathPlanner();
+
+        // Reset heading on startup
+        zeroGyroWithAlliance();
     }
 
     /**
