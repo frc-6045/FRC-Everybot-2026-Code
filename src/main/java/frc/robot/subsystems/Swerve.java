@@ -17,7 +17,6 @@ import com.pathplanner.lib.path.PathConstraints;
 
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation2d;
-import edu.wpi.first.math.geometry.Rotation3d;
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
@@ -261,11 +260,8 @@ public class Swerve extends SubsystemBase {
      * Red alliance faces 180 degrees, blue alliance faces 0 degrees.
      */
     public void zeroGyroWithAlliance() {
-        if (isRedAlliance()) {
-            m_swerveDrive.setGyro(new Rotation3d(0, 0, Math.PI));
-        } else {
-            zeroGyro();
-        }
+        Rotation2d targetHeading = isRedAlliance() ? Rotation2d.fromDegrees(180) : Rotation2d.fromDegrees(0);
+        m_swerveDrive.resetOdometry(new Pose2d(getPose().getTranslation(), targetHeading));
     }
 
     /**
