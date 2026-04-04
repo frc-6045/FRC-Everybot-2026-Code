@@ -4,9 +4,9 @@
       "type": "pigeon2",
       "id": 20,
       "canbus": "",
-      "offset": 0
+      "offset": 180
     },
-    "invertedIMU": false,
+    "invertedIMU": true,
     "modules": [
       "frontleft.json",
       "frontright.json",
