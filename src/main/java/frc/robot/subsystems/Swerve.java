@@ -260,7 +260,11 @@ public class Swerve extends SubsystemBase {
      * Red alliance faces 180 degrees, blue alliance faces 0 degrees.
      */
     public void zeroGyroWithAlliance() {
-        zeroGyro();
+        if (isRedAlliance()) {
+            m_swerveDrive.setGyro(new Rotation2d(Math.PI));
+        } else {
+            zeroGyro();
+        }
     }
 
     /**
