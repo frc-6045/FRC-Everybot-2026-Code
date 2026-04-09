@@ -37,10 +37,10 @@ public final class Constants {
 
     public static final double INTAKE_INTAKING_PERCENT = 0.6;
     public static final double LAUNCHING_LAUNCHER_PERCENT = .75;
-    public static final double LAUNCH_FROM_HUB_PERCENT = .55;
+    public static final double LAUNCH_FROM_HUB_PERCENT = .58;
     public static final double INTAKE_EJECT_PERCENT = -0.8;
 
-    public static final double SPIN_UP_SECONDS = 0.5;
+    public static final double SPIN_UP_SECONDS = 1.5;
   }
 
   public static final class ClimbConstants {
@@ -66,6 +66,7 @@ public final class Constants {
 
   public static final class AutoConstants {
     public static final double LAUNCH_SECONDS = 1.0; // Change after testing
+    public static final double LAUNCH_FROM_HUB_SECONDS = 20.0;
     public static final double CLIMB_UP_L1_SECONDS = 1.0; // Change after testing
     public static final double CLIMB_UP_L2_SECONDS = 1.0; // Change after testing
     public static final double CLIMB_DOWN_SECONDS = 1.0; // Change after testing
