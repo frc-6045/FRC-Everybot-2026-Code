@@ -5,14 +5,9 @@ import com.pathplanner.lib.auto.NamedCommands;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
-import frc.robot.commands.AutoLaunchSequence;
-import frc.robot.commands.ClimbDownTimed;
-import frc.robot.commands.ClimbUpTimed;
-import frc.robot.commands.LaunchFromHub;
+import frc.robot.commands.*;
 import frc.robot.subsystems.CANFuelSubsystem;
 import frc.robot.subsystems.ClimberSubsystem;
-import frc.robot.commands.EjectTimed;
-import frc.robot.commands.IntakeTimed;
 
 @SuppressWarnings("unused")
 public class Autos {
@@ -28,6 +23,7 @@ public class Autos {
         NamedCommands.registerCommand("EjectTimed", new EjectTimed(fuelSubsystem, Constants.AutoConstants.EJECT_SECONDS));
         NamedCommands.registerCommand("IntakeTimed", new IntakeTimed(fuelSubsystem, Constants.AutoConstants.INTAKE_SECONDS));
         NamedCommands.registerCommand("IntakeTimedLong", new IntakeTimed(fuelSubsystem, Constants.AutoConstants.INTAKE_SECONDS_LONG));
+        NamedCommands.registerCommand("ShootFromHub", new LaunchFromHubAuto(fuelSubsystem));
 
         // Autos //
         //noinspection MoveFieldAssignmentToInitializer,Convert2Diamond
@@ -44,6 +40,7 @@ public class Autos {
         createAuto("testIntake", "Test Intake", false, false, false, autoChooser);
         createAuto("shootTwiceFromDepot", "Shoot Twice From Depot", false, false, false, autoChooser);
         createAuto("kamikazeT", "Kamikaze Trench", true, false, false, autoChooser);
+        createAuto("shootProperly", "Shoot Properly", false, false, false, autoChooser);
         //autoChooser.addOption("[L] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbLeft"));
         //        //autoChooser.addOption("[M] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
         //        //autoChooser.addOption("[R] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbRight"));
