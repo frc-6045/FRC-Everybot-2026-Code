@@ -6,7 +6,6 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
-import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import frc.robot.subsystems.CANFuelSubsystem;
 import static frc.robot.Constants.FuelConstants.*;
 
@@ -17,28 +16,36 @@ public class Launch extends Command {
   /** Creates a new Intake. */
 
   CANFuelSubsystem fuelSubsystem;
-  DoubleSupplier ctrlr;
+  DoubleSupplier speedSupplier;
 
   public Launch(CANFuelSubsystem fuelSystem, DoubleSupplier speedSupplier) {
     addRequirements(fuelSystem);
     this.fuelSubsystem = fuelSystem;
-    this.ctrlr = ctrlr;
+    this.speedSupplier = speedSupplier;
   }
 
   // Called when the command is initially scheduled. Set the rollers to the
   // appropriate values for intaking
   @Override
   public void initialize() {
-    fuelSubsystem.setIntakeLauncherRoller(SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT)*ctrlr.getAsDouble());
-    fuelSubsystem.setFeederRoller(SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT)*ctrlr.getAsDouble());
+    applyRollerOutputs();
   }
 
-  // Called every time the scheduler runs while the command is scheduled. This
-  // command doesn't require updating any values while running
+  // Called every time the scheduler runs while the command is scheduled.
+  // Re-reads the supplier so the launcher tracks the trigger live.
   @Override
   public void execute() {
-    SmartDashboard.putNumber("Launching feeder modified roller value", SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT)*ctrlr.getAsDouble());
-    SmartDashboard.putNumber("Launching launcher modified roller value", SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT)*ctrlr.getAsDouble());
+    applyRollerOutputs();
+  }
+
+  private void applyRollerOutputs() {
+    double speed = speedSupplier.getAsDouble();
+    double launcherOutput = SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT) * speed;
+    double feederOutput = SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT) * speed;
+    fuelSubsystem.setIntakeLauncherRoller(launcherOutput);
+    fuelSubsystem.setFeederRoller(feederOutput);
+    SmartDashboard.putNumber("Launching launcher modified roller value", launcherOutput);
+    SmartDashboard.putNumber("Launching feeder modified roller value", feederOutput);
   }
 
   // Called once the command ends or is interrupted. Stop the rollers
