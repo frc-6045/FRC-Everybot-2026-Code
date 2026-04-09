@@ -42,6 +42,9 @@ public class Launch extends Command {
     double speed = speedSupplier.getAsDouble();
     double launcherOutput = SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT) * speed;
     double feederOutput = SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT) * speed;
+
+    SmartDashboard.putNumber("Launch Speed", speed);
+
     fuelSubsystem.setIntakeLauncherRoller(launcherOutput);
     fuelSubsystem.setFeederRoller(feederOutput);
     SmartDashboard.putNumber("Launching launcher modified roller value", launcherOutput);
