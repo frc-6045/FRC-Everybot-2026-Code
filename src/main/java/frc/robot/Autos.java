@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.commands.AutoLaunchSequence;
 import frc.robot.commands.ClimbDownTimed;
 import frc.robot.commands.ClimbUpTimed;
+import frc.robot.commands.LaunchFromHub;
 import frc.robot.subsystems.CANFuelSubsystem;
 import frc.robot.subsystems.ClimberSubsystem;
 import frc.robot.commands.EjectTimed;
@@ -34,7 +35,7 @@ public class Autos {
         //createAuto("shootTwiceAndClimb", "Shoot twice and climb", true, true, true, autoChooser);
         //createAuto("shootOnceAndClimb", "Shoot once and climb", true, true, true, autoChooser);
         createAuto("kamikaze", "Kamikaze", true, false, false, autoChooser);
-        createAuto("doNothing", "Do nothing", false, false, false, autoChooser);
+        autoChooser.addOption("Launch from hub", new LaunchFromHub(fuelSubsystem).withTimeout(Constants.AutoConstants.LAUNCH_FROM_HUB_SECONDS));
         createAuto("moveOffLine", "Move off line", true, false, false, autoChooser);
         createAuto("collectBalls", "Collect balls", true, false, false, autoChooser);
         createAuto("collectCenter", "Collect balls in center", true, false, false, autoChooser);
