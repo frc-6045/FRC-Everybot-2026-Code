@@ -10,14 +10,16 @@ import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import frc.robot.subsystems.CANFuelSubsystem;
 import static frc.robot.Constants.FuelConstants.*;
 
+import java.util.function.DoubleSupplier;
+
 /* You should consider using the more terse Command factories API instead https://docs.wpilib.org/en/stable/docs/software/commandbased/organizing-command-based.html#defining-commands */
 public class Launch extends Command {
   /** Creates a new Intake. */
 
   CANFuelSubsystem fuelSubsystem;
-  CommandXboxController ctrlr;
+  DoubleSupplier ctrlr;
 
-  public Launch(CANFuelSubsystem fuelSystem, CommandXboxController ctrlr) {
+  public Launch(CANFuelSubsystem fuelSystem, DoubleSupplier speedSupplier) {
     addRequirements(fuelSystem);
     this.fuelSubsystem = fuelSystem;
     this.ctrlr = ctrlr;
@@ -27,16 +29,16 @@ public class Launch extends Command {
   // appropriate values for intaking
   @Override
   public void initialize() {
-    fuelSubsystem.setIntakeLauncherRoller(SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT)*ctrlr.getRightTriggerAxis());
-    fuelSubsystem.setFeederRoller(SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT)*ctrlr.getRightTriggerAxis());
+    fuelSubsystem.setIntakeLauncherRoller(SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT)*ctrlr.getAsDouble());
+    fuelSubsystem.setFeederRoller(SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT)*ctrlr.getAsDouble());
   }
 
   // Called every time the scheduler runs while the command is scheduled. This
   // command doesn't require updating any values while running
   @Override
   public void execute() {
-    SmartDashboard.putNumber("Launching feeder modified roller value", SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT)*ctrlr.getRightTriggerAxis());
-    SmartDashboard.putNumber("Launching launcher modified roller value", SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT)*ctrlr.getRightTriggerAxis());
+    SmartDashboard.putNumber("Launching feeder modified roller value", SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT)*ctrlr.getAsDouble());
+    SmartDashboard.putNumber("Launching launcher modified roller value", SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT)*ctrlr.getAsDouble());
   }
 
   // Called once the command ends or is interrupted. Stop the rollers
