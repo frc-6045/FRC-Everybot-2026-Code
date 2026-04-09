@@ -32,13 +32,13 @@ public class LaunchFromHub extends Command {
     // Read the dashboard tunable once per press — release and re-press to pick up new values.
     fuelSubsystem.setIntakeLauncherRoller(
         SmartDashboard.getNumber("Launch from hub launcher value", LAUNCH_FROM_HUB_PERCENT));
-    fuelSubsystem.setFeederRoller(-INDEXER_SPIN_UP_PRE_LAUNCH_PERCENT);
+    fuelSubsystem.setFeederRoller(INDEXER_SPIN_UP_PRE_LAUNCH_PERCENT);
   }
 
   @Override
   public void execute() {
     if (!feedingStarted && timer.hasElapsed(SPIN_UP_SECONDS)) {
-      fuelSubsystem.setFeederRoller(-INDEXER_LAUNCHING_PERCENT);
+      fuelSubsystem.setFeederRoller(INDEXER_LAUNCHING_PERCENT);
       feedingStarted = true;
     }
   }
