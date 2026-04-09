@@ -3,13 +3,13 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.586123737373737,
-        "y": 4.00064393939394
+        "x": 3.593596881959911,
+        "y": 4.014799554565702
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.133879358432596,
-        "y": 3.868242143574884
+        "x": 2.14135250301877,
+        "y": 3.882397758746646
       },
       "isLocked": false,
       "linkedName": "Middle Starting Point"
@@ -48,7 +48,7 @@
   "folder": "shootTwiceAndClimb",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 180.0
+    "rotation": 0.0
   },
   "useDefaultConstraints": true
 }

@@ -3,13 +3,13 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.586123737373737,
-        "y": 4.00064393939394
+        "x": 3.593596881959911,
+        "y": 4.014799554565702
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.0484655338219175,
-        "y": 3.300918367211693
+        "x": 3.0559386784080917,
+        "y": 3.315073982383455
       },
       "isLocked": false,
       "linkedName": "Middle Starting Point"
@@ -80,7 +80,7 @@
   "folder": "collectBalls",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 180.0
+    "rotation": 0.0
   },
   "useDefaultConstraints": true
 }

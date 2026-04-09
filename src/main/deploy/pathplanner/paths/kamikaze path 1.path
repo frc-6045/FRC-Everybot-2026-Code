@@ -3,13 +3,13 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.586123737373737,
-        "y": 4.00064393939394
+        "x": 3.593596881959911,
+        "y": 4.014799554565702
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.7074316993132466,
-        "y": 4.0700111623320865
+        "x": 2.7149048438994208,
+        "y": 4.084166777503849
       },
       "isLocked": false,
       "linkedName": "Middle Starting Point"
@@ -48,7 +48,7 @@
   "folder": "kamikaze",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 180.0
+    "rotation": 0.0
   },
   "useDefaultConstraints": true
 }
