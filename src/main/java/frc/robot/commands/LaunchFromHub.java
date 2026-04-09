@@ -18,6 +18,7 @@ import static frc.robot.Constants.FuelConstants.*;
 public class LaunchFromHub extends Command {
   private final CANFuelSubsystem fuelSubsystem;
   private final Timer timer = new Timer();
+  private boolean feedingStarted;
 
   public LaunchFromHub(CANFuelSubsystem fuelSystem) {
     addRequirements(fuelSystem);
@@ -27,6 +28,8 @@ public class LaunchFromHub extends Command {
   @Override
   public void initialize() {
     timer.restart();
+    feedingStarted = false;
+    // Read the dashboard tunable once per press — release and re-press to pick up new values.
     fuelSubsystem.setIntakeLauncherRoller(
         SmartDashboard.getNumber("Launch from hub launcher value", LAUNCH_FROM_HUB_PERCENT));
     fuelSubsystem.setFeederRoller(-INDEXER_SPIN_UP_PRE_LAUNCH_PERCENT);
@@ -34,10 +37,9 @@ public class LaunchFromHub extends Command {
 
   @Override
   public void execute() {
-    fuelSubsystem.setIntakeLauncherRoller(
-        SmartDashboard.getNumber("Launch from hub launcher value", LAUNCH_FROM_HUB_PERCENT));
-    if (timer.hasElapsed(SPIN_UP_SECONDS)) {
+    if (!feedingStarted && timer.hasElapsed(SPIN_UP_SECONDS)) {
       fuelSubsystem.setFeederRoller(-INDEXER_LAUNCHING_PERCENT);
+      feedingStarted = true;
     }
   }
 
