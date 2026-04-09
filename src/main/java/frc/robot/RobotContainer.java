@@ -110,6 +110,8 @@ public class RobotContainer {
       driverController.povDown().whileTrue(new ClimbDown(climberSubsystem));
       // While the up arrow on the directional pad is held it will climb the robot
       driverController.povUp().whileTrue(new ClimbUp(climberSubsystem));
+      // While the right trigger is pressed, launch with variable speed depending on the right trigger axis.
+      driverController.rightTrigger().whileTrue(new LaunchSequence(fuelSubsystem, () -> {return driverController.getRightTriggerAxis();}));
     }
     //noinspection Convert2MethodRef
     fuelSubsystem.setDefaultCommand(fuelSubsystem.run(() -> fuelSubsystem.stop()));

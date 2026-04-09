@@ -7,6 +7,9 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import frc.robot.Constants.FuelConstants;
+
+import java.util.function.DoubleSupplier;
+
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.subsystems.CANFuelSubsystem;
 
@@ -20,6 +23,14 @@ public class LaunchSequence extends SequentialCommandGroup {
     // addCommands(new FooCommand(), new BarCommand());
     addCommands(
         new SpinUp(fuelSubsystem).withTimeout(FuelConstants.SPIN_UP_SECONDS),
-        new Launch(fuelSubsystem, ctrlr));
+        new Launch(fuelSubsystem, () -> {return ctrlr.getRightTriggerAxis();}));
+  }
+
+  public LaunchSequence(CANFuelSubsystem fuelSubsystem, DoubleSupplier speedSupplier) {
+    // Add your commands in the addCommands() call, e.g.
+    // addCommands(new FooCommand(), new BarCommand());
+    addCommands(
+        new SpinUp(fuelSubsystem).withTimeout(FuelConstants.SPIN_UP_SECONDS),
+        new Launch(fuelSubsystem, () -> {return speedSupplier.getAsDouble();}));
   }
 }
