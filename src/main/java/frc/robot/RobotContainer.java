@@ -97,6 +97,8 @@ public class RobotContainer {
       operatorController.povDown().whileTrue(new ClimbDown(climberSubsystem));
       // While the up arrow on the directional pad is held it will climb the robot
       operatorController.povUp().whileTrue(new ClimbUp(climberSubsystem));
+      // While the right trigger is pressed, launch with variable speed depending on the right trigger axis.
+      operatorController.rightTrigger().whileTrue(new LaunchSequence(fuelSubsystem, () -> {return operatorController.getRightTriggerAxis();}));
     } else {
       // While the left bumper on operator controller is held, intake Fuel
       driverController.leftBumper().whileTrue(new Intake(fuelSubsystem));
