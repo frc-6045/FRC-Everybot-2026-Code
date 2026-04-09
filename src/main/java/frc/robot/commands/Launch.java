@@ -15,26 +15,28 @@ public class Launch extends Command {
   /** Creates a new Intake. */
 
   CANFuelSubsystem fuelSubsystem;
-  double RTAxis;
+  CommandXboxController ctrlr;
 
-  public Launch(CANFuelSubsystem fuelSystem, double RTAxis) {
+  public Launch(CANFuelSubsystem fuelSystem, CommandXboxController ctrlr) {
     addRequirements(fuelSystem);
     this.fuelSubsystem = fuelSystem;
-    this.RTAxis = RTAxis;
+    this.ctrlr = ctrlr;
   }
 
   // Called when the command is initially scheduled. Set the rollers to the
   // appropriate values for intaking
   @Override
   public void initialize() {
-    fuelSubsystem.setIntakeLauncherRoller(SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT));
-    fuelSubsystem.setFeederRoller(SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT));
+    fuelSubsystem.setIntakeLauncherRoller(SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT)*ctrlr.getRightTriggerAxis());
+    fuelSubsystem.setFeederRoller(SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT)*ctrlr.getRightTriggerAxis());
   }
 
   // Called every time the scheduler runs while the command is scheduled. This
   // command doesn't require updating any values while running
   @Override
   public void execute() {
+    SmartDashboard.putNumber("Launching feeder modified roller value", SmartDashboard.getNumber("Launching feeder roller value", -INDEXER_LAUNCHING_PERCENT)*ctrlr.getRightTriggerAxis());
+    SmartDashboard.putNumber("Launching launcher modified roller value", SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT)*ctrlr.getRightTriggerAxis());
   }
 
   // Called once the command ends or is interrupted. Stop the rollers

@@ -88,7 +88,7 @@ public class RobotContainer {
       operatorController.leftBumper().whileTrue(new Intake(fuelSubsystem));
       // While the right bumper on the operator controller is held, spin up for 1
       // second, then launch fuel. When the button is released, stop.
-      operatorController.rightBumper().whileTrue(new LaunchSequence(fuelSubsystem, operatorController.getRightTriggerAxis()));
+      operatorController.rightBumper().whileTrue(new LaunchSequence(fuelSubsystem, operatorController));
       // While the A button is held on the operator controller, eject fuel back out
       // the intake
       operatorController.a().whileTrue(new Eject(fuelSubsystem));
@@ -101,7 +101,7 @@ public class RobotContainer {
       driverController.leftBumper().whileTrue(new Intake(fuelSubsystem));
       // While the right bumper on the operator controller is held, spin up for 1
       // second, then launch fuel. When the button is released, stop.
-      driverController.rightBumper().whileTrue(new LaunchSequence(fuelSubsystem, operatorController.getRightTriggerAxis()));
+      driverController.rightBumper().whileTrue(new LaunchSequence(fuelSubsystem, driverController.getRightTriggerAxis()));
       // While the A button is held on the operator controller, eject fuel back out
       // the intake
       driverController.a().whileTrue(new Eject(fuelSubsystem));

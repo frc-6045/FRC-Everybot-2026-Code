@@ -1,0 +1,54 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.3410913140311806,
+        "y": 0.7322271714922055
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 4.34109131403118,
+        "y": 0.7322271714922053
+      },
+      "isLocked": false,
+      "linkedName": "kamikazeTRight path 1 end"
+    },
+    {
+      "anchor": {
+        "x": 5.906547884187082,
+        "y": 0.7322271714922055
+      },
+      "prevControl": {
+        "x": 4.906547884187082,
+        "y": 0.7322271714922055
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "kamikazeTRight path 2 end"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 180.0
+  },
+  "reversed": false,
+  "folder": "kamikazeRight",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 180.0
+  },
+  "useDefaultConstraints": true
+}

@@ -38,10 +38,11 @@ public class Autos {
         createAuto("moveOffLine", "Move off line", true, false, false, autoChooser);
         createAuto("collectBalls", "Collect balls", true, false, false, autoChooser);
         createAuto("collectCenter", "Collect balls in center", true, false, false, autoChooser);
-        createAuto("garbagecanDestroyer", "haaaaaaaaaaa", false, false, false, autoChooser);
+        createAuto("garbagecanDestroyer", "do not run garbage can destroyer did i mention you should not run garbage can destroyer dont run it DONT RUN THIS PLEASE the big yahoo! will smite you down and book you a one way ticket to NORTH KOREA and YOU WILL NOT RETURN I AM WARNING YOU !!!1!!!11!!!!11 you will have a better change beating the minecraft bedrock wither than succeeding with this auto", false, false, false, autoChooser);
         createAuto("testShooting", "Test Shooting", false, false, false, autoChooser);
         createAuto("testIntake", "Test Intake", false, false, false, autoChooser);
         createAuto("shootTwiceFromDepot", "Shoot Twice From Depot", false, false, false, autoChooser);
+        createAuto("kamikazeT", "Kamikaze Trench", true, false, false, autoChooser);
         //autoChooser.addOption("[L] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbLeft"));
         //        //autoChooser.addOption("[M] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimb"));
         //        //autoChooser.addOption("[R] Shoot twice and climb", AutoBuilder.buildAuto("shootTwiceAndClimbRight"));
