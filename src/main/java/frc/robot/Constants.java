@@ -40,7 +40,7 @@ public final class Constants {
     public static final double LAUNCH_FROM_HUB_PERCENT = .58;
     public static final double INTAKE_EJECT_PERCENT = -0.8;
 
-    public static final double SPIN_UP_SECONDS = 1.5;
+    public static final double SPIN_UP_SECONDS = 1;
   }
 
   public static final class ClimbConstants {

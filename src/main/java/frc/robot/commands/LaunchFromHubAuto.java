@@ -40,7 +40,7 @@ public class LaunchFromHubAuto extends Command {
   @Override
   public void execute() {
     if (!feedingStarted && timer.hasElapsed(SPIN_UP_SECONDS)) {
-      fuelSubsystem.setFeederRoller(-INDEXER_LAUNCHING_PERCENT);
+      fuelSubsystem.setFeederRoller(INDEXER_LAUNCHING_PERCENT);
       feedingStarted = true;
     }
   }
