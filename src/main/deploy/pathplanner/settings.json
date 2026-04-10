@@ -3,7 +3,7 @@
   "robotLength": 0.9,
   "holonomicMode": true,
   "pathFolders": [
-    "youSpinMeRightRoundBabyRightRound",
+    "shootTwiceFromCenter",
     "alternateClimb",
     "collectBalls",
     "collectCenter",
@@ -19,10 +19,11 @@
     "shootTwiceAndClimb",
     "shootTwiceAndClimbLeft",
     "shootTwiceAndClimbRight",
-    "shootTwiceFromDepot"
+    "shootTwiceFromDepot",
+    "youSpinMeRightRoundBabyRightRound"
   ],
   "autoFolders": [
-    "youSpinMeRightRoundBabyRightRound",
+    "shootTwiceFromCenter",
     "collectBalls",
     "collectCenter",
     "kamikaze",
@@ -30,7 +31,8 @@
     "moveOffLine",
     "shootOnceAndClimb",
     "shootOnceFromDepot",
-    "shootTwiceAndClimb"
+    "shootTwiceAndClimb",
+    "youSpinMeRightRoundBabyRightRound"
   ],
   "defaultMaxVel": 3.0,
   "defaultMaxAccel": 3.0,

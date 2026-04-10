@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.593596881959911,
-        "y": 4.014799554565702
+        "x": 5.920045454545455,
+        "y": 7.364102272727273
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.1895879732739423,
-        "y": 4.004699331848553
+        "x": 8.032943181818181,
+        "y": 7.477477272727273
       },
       "isLocked": false,
-      "linkedName": "Middle Starting Point"
+      "linkedName": "sTFC path 3 end"
     },
     {
       "anchor": {
-        "x": 2.883,
-        "y": 4.014799554565702
+        "x": 6.6827499999999995,
+        "y": 5.014147727272728
       },
       "prevControl": {
-        "x": 3.1794877505567927,
-        "y": 3.974398663697105
+        "x": 7.9917159090909085,
+        "y": 5.62225
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Middle Shooting Position"
+      "linkedName": "sTFC path 4 end"
     }
   ],
   "rotationTargets": [],
@@ -42,10 +42,10 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": -147.99461679191648
   },
   "reversed": false,
-  "folder": null,
+  "folder": "shootTwiceFromCenter",
   "idealStartingState": {
     "velocity": 0,
     "rotation": 0.0

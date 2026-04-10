@@ -1,0 +1,87 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "sTFC path 1"
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ShootFromHub"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 5.0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "sTFC path 2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "sTFC path 3"
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "sTFC path 4"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeTimedLong"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "sTFC path 5"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "sTFC path 6"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootFromHub"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "shootTwiceFromCenter",
+  "choreoAuto": false
+}

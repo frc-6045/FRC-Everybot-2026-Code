@@ -8,8 +8,8 @@
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.1895879732739423,
-        "y": 4.004699331848553
+        "x": 3.227310298842969,
+        "y": 4.0125630293923225
       },
       "isLocked": false,
       "linkedName": "Middle Starting Point"
@@ -20,8 +20,8 @@
         "y": 4.014799554565702
       },
       "prevControl": {
-        "x": 3.1794877505567927,
-        "y": 3.974398663697105
+        "x": 3.163571818091591,
+        "y": 4.011378034793704
       },
       "nextControl": null,
       "isLocked": false,
@@ -45,7 +45,7 @@
     "rotation": 0.0
   },
   "reversed": false,
-  "folder": null,
+  "folder": "shootTwiceFromCenter",
   "idealStartingState": {
     "velocity": 0,
     "rotation": 0.0

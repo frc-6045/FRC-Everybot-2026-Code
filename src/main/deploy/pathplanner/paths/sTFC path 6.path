@@ -3,16 +3,16 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.593596881959911,
-        "y": 4.014799554565702
+        "x": 3.065056818181818,
+        "y": 5.962375
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.1895879732739423,
-        "y": 4.004699331848553
+        "x": 1.955825655246281,
+        "y": 5.510543946537866
       },
       "isLocked": false,
-      "linkedName": "Middle Starting Point"
+      "linkedName": "sTFC path 5 end"
     },
     {
       "anchor": {
@@ -20,8 +20,8 @@
         "y": 4.014799554565702
       },
       "prevControl": {
-        "x": 3.1794877505567927,
-        "y": 3.974398663697105
+        "x": 2.600767890070677,
+        "y": 4.456631232211988
       },
       "nextControl": null,
       "isLocked": false,
@@ -45,10 +45,10 @@
     "rotation": 0.0
   },
   "reversed": false,
-  "folder": null,
+  "folder": "shootTwiceFromCenter",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": -147.995
   },
   "useDefaultConstraints": true
 }
