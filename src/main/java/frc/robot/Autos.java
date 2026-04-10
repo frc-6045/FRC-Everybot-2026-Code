@@ -31,6 +31,7 @@ public class Autos {
         //createAuto("shootTwiceAndClimb", "Shoot twice and climb", true, true, true, autoChooser);
         //createAuto("shootOnceAndClimb", "Shoot once and climb", true, true, true, autoChooser);
         createAuto("kamikaze", "Kamikaze", true, false, false, autoChooser);
+        createAuto("doNothing", "Do nothing", false, false, false, autoChooser);
         autoChooser.addOption("Launch from hub", new LaunchFromHub(fuelSubsystem).withTimeout(Constants.AutoConstants.LAUNCH_FROM_HUB_SECONDS));
         createAuto("moveOffLine", "Move off line", true, false, false, autoChooser);
         createAuto("collectBalls", "Collect balls", true, false, false, autoChooser);
