@@ -38,6 +38,7 @@ public final class Constants {
     public static final double INTAKE_INTAKING_PERCENT = 0.6;
     public static final double LAUNCHING_LAUNCHER_PERCENT = .75;
     public static final double LAUNCH_FROM_HUB_PERCENT = .58;
+    public static final double LAUNCH_FROM_HUB_AUTO_PERCENT = .65;
     public static final double INTAKE_EJECT_PERCENT = -0.8;
 
     public static final double SPIN_UP_SECONDS = 1;
