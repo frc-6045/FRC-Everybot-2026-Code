@@ -9,31 +9,39 @@ import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.CANFuelSubsystem;
 import static frc.robot.Constants.FuelConstants.*;
 
+import java.util.function.DoubleSupplier;
+
 /* You should consider using the more terse Command factories API instead https://docs.wpilib.org/en/stable/docs/software/commandbased/organizing-command-based.html#defining-commands */
 public class SpinUp extends Command {
   /** Creates a new Intake. */
 
   CANFuelSubsystem fuelSubsystem;
+  DoubleSupplier speedSupplier;
 
-  public SpinUp(CANFuelSubsystem fuelSystem) {
+  public SpinUp(CANFuelSubsystem fuelSystem, DoubleSupplier speedSupplier) {
     addRequirements(fuelSystem);
     this.fuelSubsystem = fuelSystem;
+    this.speedSupplier = speedSupplier;
   }
 
   // Called when the command is initially scheduled. Set the rollers to the
   // appropriate values for intaking
   @Override
   public void initialize() {
-    fuelSubsystem
-        .setIntakeLauncherRoller(
-            SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT));
-    fuelSubsystem.setFeederRoller(SmartDashboard.getNumber("Launching spin-up feeder value", -INDEXER_SPIN_UP_PRE_LAUNCH_PERCENT));
+    double speed = speedSupplier.getAsDouble();
+    double launcherOutput = SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT) * speed;
+    fuelSubsystem.setIntakeLauncherRoller(launcherOutput);
+    fuelSubsystem.setFeederRoller(0);
   }
 
   // Called every time the scheduler runs while the command is scheduled. This
   // command doesn't require updating any values while running
   @Override
   public void execute() {
+    double speed = speedSupplier.getAsDouble();
+    double launcherOutput = SmartDashboard.getNumber("Launching launcher roller value", LAUNCHING_LAUNCHER_PERCENT) * speed;
+    fuelSubsystem.setIntakeLauncherRoller(launcherOutput);
+    fuelSubsystem.setFeederRoller(0);
   }
 
   // Called once the command ends or is interrupted. Stop the rollers

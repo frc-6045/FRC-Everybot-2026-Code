@@ -18,7 +18,7 @@ public class AutoLaunchSequence extends SequentialCommandGroup {
     // Add your commands in the addCommands() call, e.g.
     // addCommands(new FooCommand(), new BarCommand());
     addCommands(
-        new SpinUp(fuelSubsystem).withTimeout(FuelConstants.SPIN_UP_SECONDS),
+        new SpinUp(fuelSubsystem, () -> 0.75).withTimeout(FuelConstants.SPIN_UP_SECONDS),
         new LaunchTimed(fuelSubsystem, AutoConstants.LAUNCH_SECONDS));
   }
 }

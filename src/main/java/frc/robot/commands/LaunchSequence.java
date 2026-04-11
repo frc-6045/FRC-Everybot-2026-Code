@@ -23,7 +23,7 @@ public class LaunchSequence extends SequentialCommandGroup {
 
   public LaunchSequence(CANFuelSubsystem fuelSubsystem, DoubleSupplier speedSupplier) {
     addCommands(
-       // new SpinUp(fuelSubsystem).withTimeout(FuelConstants.SPIN_UP_SECONDS),
+        new SpinUp(fuelSubsystem, speedSupplier).withTimeout(FuelConstants.SPIN_UP_SECONDS),
         new Launch(fuelSubsystem, speedSupplier));
   }
 }
